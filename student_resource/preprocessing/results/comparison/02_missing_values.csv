@@ -1,0 +1,7 @@
+split,source,records,name_raw_null,name_norm_null,name_clean_null,name_base_null,address_raw_null,address_raw_blank,address_norm_null,address_clean_null,address_with_placeholder_segment,address_placeholder_only,address_no_numbers,country_raw_null,country_clean_null
+train,S1,2206821,0,0,0,8,0,0,0,0,17,0,77037,0,0
+train,S2,5034616,0,0,0,40,168967,0,168967,168967,175469,0,470941,0,0
+train,S3,5285603,0,0,0,182,175916,0,175916,175916,174620,0,486306,0,0
+test,S1,1732544,0,0,0,4,0,0,0,0,20,0,71838,0,0
+test,S2,4887273,0,0,0,342,129408,0,129408,129408,140414,0,358030,0,0
+test,S3,5082316,0,0,0,569,136098,0,136098,136098,140701,0,381493,0,0

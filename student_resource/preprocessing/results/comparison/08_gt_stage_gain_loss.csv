@@ -1,0 +1,15 @@
+from,to,pairs_equal_before,pairs_equal_after,gained,lost,gain_pct_of_pairs
+name: raw,name: unicode,35540,35540,0,0,0.0
+name: unicode,name: lowercase,35540,82018,46478,0,6.082
+name: lowercase,name: norm,82018,120221,38203,0,4.999
+name: norm,name: clean,120221,173073,52852,0,6.916
+name: clean,name: fold,173073,203256,30183,0,3.95
+name: clean,name: base,173073,348261,175190,2,22.924
+name: base,name: base+fold,348261,378932,30671,0,4.013
+address: raw,address: unicode,16807,16807,0,0,0.0
+address: unicode,address: lowercase,16807,55274,38467,0,5.034
+address: lowercase,address: norm,55274,56552,1278,0,0.167
+address: norm,address: placeholder,56552,58191,1639,0,0.214
+address: placeholder,address: clean,58191,64630,6439,0,0.843
+address: clean,address: fold,64630,64630,0,0,0.0
+numbers as written (set),numbers zero-stripped (set),463476,488562,25086,0,3.283

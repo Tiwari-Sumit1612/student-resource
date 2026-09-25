@@ -1,0 +1,164 @@
+split,source,field,stage,merged_into,distinct_previous_values
+train,S1,name,lowercase,dd trading private limited,DD Trading Private Limited || Dd Trading Private Limited
+train,S1,name,lowercase,pk services private limited,PK Services Private Limited || Pk Services Private Limited
+train,S1,name,lowercase,sa solutions private limited,SA Solutions Private Limited || Sa Solutions Private Limited
+train,S1,name,punctuation,federal initiative llc,"federal initiative llc || federal initiative, l.l.c."
+train,S1,name,punctuation,haryana india private limited,haryana (india) private limited || haryana india private limited
+train,S1,name,punctuation,piedmont college llc,"piedmont college llc || piedmont college, llc"
+train,S1,name,legal_removed,future real impex,future real impex private limited || future real impex pvt ltd
+train,S1,name,legal_removed,rsp india,rsp india limited || rsp india private limited
+train,S1,name,legal_removed,sharp mckinley,sharp mckinley llc || sharp mckinley lp
+train,S1,address,punctuation,218 siddharth complex r c dutt road alkapuri vadodara gujarat,"218, siddharth complex, r c dutt road alkapuri, vadodara, gujarat || 218, siddharth complex, r c dutt road, alkapuri, vadodara, gujarat"
+train,S1,address,punctuation,236b ajc bose road kolkata kolkata howrah west bengal,"236b a.j.c bose road kolkata, kolkata, howrah, west bengal || 236b, ajc bose road, kolkata, kolkata, howrah, west bengal"
+train,S1,address,punctuation,b 903 bramha niwas eastern express highway opp r r school mulund east mumbai maharashtra,"b/903, bramha niwas, eastern express highway opp r r school, mulund east, mumbai, maharashtra || b/903, bramha niwas, eastern express highway, opp r r school, mulund east, mumbai, maharashtra"
+train,S2,name,lowercase,federal initiative llc,FEDERAL INITIATIVE LLC || Federal Initiative LLC || Federal Initiative Llc
+train,S2,name,lowercase,gowri (india) cars private limited,Gowri (India) Cars Private Limited || gowri (india) cars private limited
+train,S2,name,lowercase,health alliance ltd,HEALTH ALLIANCE LTD || Health Alliance Ltd
+train,S2,name,whitespace,health alliance ltd,health alliance  ltd || health alliance ltd
+train,S2,name,whitespace,kayess charitable trust,kayess charitable  trust || kayess charitable trust
+train,S2,name,whitespace,modern semiconductor industries llc,modern  semiconductor industries llc || modern semiconductor industries llc
+train,S2,name,punctuation,4257 highland place properties center,4257 highland place properties [center] || 4257 highland place properties center
+train,S2,name,punctuation,dillahunt data,dillahunt data || dillahunt-data
+train,S2,name,punctuation,kayess charitable trust,kayess charitable (trust) || kayess charitable [trust] || kayess charitable trust
+train,S2,name,diacritic_fold,health alliance ltd,health alliance ltd || health álliance ltd
+train,S2,name,diacritic_fold,optque,optque || óptque
+train,S2,name,diacritic_fold,swift transport private limited,swift transport private limited || swift transport private límited
+train,S2,name,legal_removed,rsp india,limited rsp india || rsp india limited
+train,S2,name,legal_removed,sharp mckinley,sharp lp mckinley || sharp mckinley || sharp mckinley llc || sharp mckinley lp
+train,S2,name,legal_removed,vzv village,vzv village || vzv village llc
+train,S2,address,unicode,"A - 204, AHMEDABAD, Gujarat","A - 204, AHMEDABAD, Gujarat || A Â 204, AHMEDABAD, Gujarat"
+train,S2,address,lowercase,"19215 1/2 choctaw rd, bend, or","19215 1/2 CHOCTAW RD, BEND, OR || 19215 1/2 Choctaw Rd, BEND, OR"
+train,S2,address,lowercase,"452 1/2 wisconsin ave, beeloit, wi","452 1/2 WISCONSIN AVE, BEELOIT, WI || 452 1/2 Wisconsin Ave, BEELOIT, WI"
+train,S2,address,lowercase,"6 samuels way, <null>, gorham, me","6 SAMUELS WAY, <NULL>, GORHAM, ME || 6 Samuels Way, <NULL>, GORHAM, ME"
+train,S2,address,whitespace,"15757 90th pl, scottsdale airpark, az","15757  90th pl, scottsdale airpark, az || 15757 90th pl, scottsdale airpark, az"
+train,S2,address,whitespace,"20002 mountain highway, spanaway, wa","20002  mountain highway, spanaway, wa || 20002 mountain highway, spanaway, wa"
+train,S2,address,whitespace,"314 jones st, raleigh, nc","314  jones st, raleigh, nc || 314 jones st, raleigh, nc"
+train,S2,address,placeholder,"2 valley view village, sweetwater, tn","2 valley view village, null, sweetwater, tn || 2 valley view village, sweetwater, null, tn"
+train,S2,address,placeholder,"ky, bowling green, 507 middle bridge rd","<null>, ky, bowling green, 507 middle bridge rd || ky, bowling green, 507 middle bridge rd || ky, bowling green, <null>, 507 middle bridge rd"
+train,S2,address,placeholder,"ut, 800, salt lake city","<null>, ut, 800, salt lake city || ut, 800, salt lake city"
+train,S2,address,punctuation,170 nehru nagar bye pass road agra uttar pradesh,"#170 nehru nagar bye pass road, agra, uttar pradesh || 170 nehru nagar bye pass road, agra, uttar pradesh"
+train,S2,address,punctuation,5 elm creek dr elmhurst il,"5 elm creek dr, elmhurst, il || 5. elm creek dr, elmhurst, il"
+train,S2,address,punctuation,61 bangalore karnataka,"# 61, bangalore, karnataka || #61, bangalore, karnataka"
+train,S2,address,diacritic_fold,1063 mono road pinon hills ca,1063 mono road pinon hills ca || 1063 mono road piñon hills ca
+train,S2,address,diacritic_fold,10639 golden view road pinon hills ca,10639 golden view road pinon hills ca || 10639 golden view road piñon hills ca
+train,S2,address,diacritic_fold,40 state hwy 73 penasco nm,40 state hwy 73 penasco nm || 40 state hwy 73 peñasco nm
+train,S3,name,lowercase,bestapparelsystems.com,Bestapparelsystems.Com || bestapparelsystems.com
+train,S3,name,lowercase,optque,Optque || optque
+train,S3,name,lowercase,piedmont álliance,PIEDMONT ÁLLIANCE || Piedmont Álliance
+train,S3,name,whitespace,kayess charitable trust,kayess charitable  trust || kayess charitable trust
+train,S3,name,whitespace,noida vision private ltd,noida vision private  ltd || noida vision private ltd
+train,S3,name,whitespace,rogers worldwide l.l.c.,rogers worldwide  l.l.c. || rogers worldwide l.l.c.
+train,S3,name,punctuation,dillahunt data,dillahunt (data) || dillahunt data
+train,S3,name,punctuation,pioneer creative laboratories llc,"pioneer creative laboratories, llc || pioneer creative laboratories,-llc"
+train,S3,name,punctuation,torres activate,torres (activate) || torres activate
+train,S3,name,diacritic_fold,candide powell anchor communities,candide powell anchor communities || candide pówell anchor communities
+train,S3,name,diacritic_fold,lumify sanayi inc,lumify sanayi inc || lumify sanayi ínc
+train,S3,name,diacritic_fold,private mumbai enterprises limited,private mumbai enterprises limited || prívate mumbai enterprises limited
+train,S3,name,legal_removed,legacy bay center,legacy bay center || legacy bay llc center
+train,S3,name,legal_removed,muhammad cyber,muhammad cyber || muhammad cyber inc
+train,S3,name,legal_removed,rsp india,rsp india || rsp india limited || rsp india private ltd
+train,S3,address,lowercase,"1652 daley, mesa, arizona","1652 Daley, MESA, Arizona || 1652 Daley, Mesa, Arizona"
+train,S3,address,lowercase,"2250b st rte 716, maria stein, ohio","2250B St Rte 716, Maria Stein, Ohio || 2250b St Rte 716, Maria Stein, Ohio"
+train,S3,address,lowercase,"5630a lapwai rd, lewiston, idaho","5630A Lapwai Rd, Lewiston, Idaho || 5630a Lapwai Rd, Lewiston, Idaho"
+train,S3,address,whitespace,"11 webster street, westbrook, maine","11  webster street, westbrook, maine || 11 webster street, westbrook, maine"
+train,S3,address,whitespace,"213 fifth avenue, kure beach, north carolina","213  fifth avenue, kure beach, north carolina || 213 fifth avenue, kure beach, north carolina"
+train,S3,address,whitespace,"7 main st, middletown, delaware","7  main st, middletown, delaware || 7 main st, middletown, delaware"
+train,S3,address,placeholder,"400 savage drive, winchester, virginia","400 savage drive, null, winchester, virginia || 400 savage drive, winchester, virginia, null"
+train,S3,address,placeholder,"broadway, bosotn city, massachusetts","broadway, bosotn city, massachusetts || broadway, null, bosotn city, massachusetts"
+train,S3,address,placeholder,"eleganta e b3/106 kalyan shil road casa bella, thane, mh","eleganta e b3/106 kalyan shil road casa bella, thane, mh, null || eleganta e b3/106 kalyan shil road casa bella, thane, null, mh"
+train,S3,address,punctuation,392 bangalore north bangalore ka,"#392, bangalore north, bangalore, ka || 392, bangalore north, bangalore, ka"
+train,S3,address,punctuation,75 new delhi dl,"##75, new delhi, dl || #75, new delhi, dl"
+train,S3,address,punctuation,bangalore ka no 2,"bangalore, ka, no 2 || bangalore, ka, no.2."
+train,S3,address,diacritic_fold,11636 oasis rd pinon hills california,11636 oasis rd pinon hills california || 11636 oasis rd piñon hills california
+train,S3,address,diacritic_fold,1330 tamarack road pinon hills california,1330 tamarack road pinon hills california || 1330 tamarack road piñon hills california
+train,S3,address,diacritic_fold,8707 wintergreen rd pinon hills california,8707 wintergreen rd pinon hills california || 8707 wintergreen rd piñon hills california
+test,S1,name,lowercase,ad club sarl,AD Club SARL || Ad Club SARL
+test,S1,name,lowercase,ad media private limited,AD Media Private Limited || Ad Media Private Limited
+test,S1,name,lowercase,an solutions private limited,AN Solutions Private Limited || An Solutions Private Limited
+test,S1,name,punctuation,community choice center inc,"community choice center inc || community choice center, inc"
+test,S1,name,punctuation,lopez fuel inc,lopez fuel inc || lopez fuel inc.
+test,S1,name,punctuation,zitech pc,zitech p.c. || zitech pc
+test,S1,name,diacritic_fold,amicale du unite,amicale du unite || amicale du unité
+test,S1,name,diacritic_fold,bordeaux residence sci,bordeaux residence sci || bordeaux résidence sci
+test,S1,name,diacritic_fold,financement college sarl,financement college sarl || financement collège sarl
+test,S1,name,legal_removed,commun & frères,commun & freres || commun & freres sarl
+test,S1,name,legal_removed,kayess charitable trust,kayess charitable trust || kayess charitable trust llp
+test,S1,name,legal_removed,reliable cargo alliance,reliable cargo alliance || reliable cargo alliance llc
+test,S1,address,lowercase,"13 rue malbec, bordeaux, nouvelle-aquitaine","13 RUE Malbec, Bordeaux, Nouvelle-Aquitaine || 13 Rue Malbec, Bordeaux, Nouvelle-Aquitaine"
+test,S1,address,lowercase,"13 rue vauban, calais, hauts-de-france","13 RUE Vauban, Calais, Hauts-de-France || 13 Rue Vauban, Calais, Hauts-de-France"
+test,S1,address,lowercase,"163 rue bouthier, bordeaux, nouvelle-aquitaine","163 RUE Bouthier, Bordeaux, Nouvelle-Aquitaine || 163 Rue Bouthier, Bordeaux, Nouvelle-Aquitaine"
+test,S1,address,whitespace,"100 rue de lille, maison des associations, tourcoing, hauts-de-france","100 rue de  lille, maison des associations, tourcoing, hauts-de-france || 100 rue de lille, maison des associations, tourcoing, hauts-de-france"
+test,S1,address,whitespace,"12 rue de metz, bordeaux, nouvelle-aquitaine","12 rue de  metz, bordeaux, nouvelle-aquitaine || 12 rue de metz, bordeaux, nouvelle-aquitaine"
+test,S1,address,whitespace,"27 rue jean bart, maison des associations, lille, hauts-de-france","27 rue jean  bart, maison des associations, lille, hauts-de-france || 27 rue jean bart, maison des associations, lille, hauts-de-france"
+test,S1,address,placeholder,"2 quai de brazza, bord de garonne, maison de la nature et de lenvironnement, bordeaux, nouvelle-aquitaine","2 quai de brazza , bord de garonne, maison de la nature et de lenvironnement, bordeaux, nouvelle-aquitaine || 2 quai de brazza, bord de garonne, maison de la nature et de lenvironnement, bordeaux, nouvelle-aquitaine"
+test,S1,address,placeholder,"41 quai de malakoff, nantes, pays de la loire","41 quai de malakoff, nantes, pays de la loire || 41 quai de malakoff,, nantes, pays de la loire"
+test,S1,address,placeholder,"rue du 11 novembre 1918, maison de la vie associative, dunkerque, hauts-de-france","rue du 11 novembre 1918, maison de la vie associative, dunkerque, hauts-de-france || rue du 11 novembre 1918, maison de la vie associative,, dunkerque, hauts-de-france"
+test,S1,address,punctuation,16 rue jeanne darc lille hauts de france,"16 rue jeanne d'arc, lille, hauts-de-france || 16 rue jeanne darc, lille, hauts-de-france"
+test,S1,address,punctuation,16a 20 wea main ajmal khan road karol bagh new delhi delhi,"16a/20 wea main ajmal khan road karol bagh, new delhi, delhi || 16a/20, w.e.a. main ajmal khan road, karol bagh, new delhi, delhi"
+test,S1,address,punctuation,23 rte de saint marc college albert vincon saint nazaire pays de la loire,"23 rte de saint marc, college albert vincon, saint-nazaire, pays de la loire || 23 rte de saint-marc, college albert vincon, saint-nazaire, pays de la loire"
+test,S1,address,diacritic_fold,1 rue des ecoles roubaix hauts de france,1 rue des ecoles roubaix hauts de france || 1 rue des écoles roubaix hauts de france
+test,S1,address,diacritic_fold,14 rue rene roy de clotte bordeaux nouvelle aquitaine,14 rue rene roy de clotte bordeaux nouvelle aquitaine || 14 rue rené roy de clotte bordeaux nouvelle aquitaine
+test,S1,address,diacritic_fold,225 rue leon blum dunkerque hauts de france,225 rue leon blum dunkerque hauts de france || 225 rue léon blum dunkerque hauts de france
+test,S2,name,lowercase,davis produce,DAVIS PRODUCE || Davis Produce
+test,S2,name,lowercase,don sante,DON SANTE || Don Sante
+test,S2,name,lowercase,roubaix pârents sarl,ROUBAIX PÂRENTS SARL || Roubaix Pârents SARL
+test,S2,name,whitespace,don sante,don  sante || don sante
+test,S2,name,whitespace,gowri (india) cars private limited,gowri (india)  cars private limited || gowri (india) cars private limited
+test,S2,name,whitespace,sauceda works partners inc,sauceda  works partners inc || sauceda works  partners inc || sauceda works partners inc
+test,S2,name,punctuation,kayess charitable trust,kayess charitable [trust] || kayess charitable trust || kayess charitable-trust
+test,S2,name,punctuation,ragini craft private ltd,ragini craft private (ltd) || ragini craft private ltd || ragini craft private-ltd
+test,S2,name,punctuation,shakti high projects pvt ltd,shakti high projects pvt (ltd) || shakti high-projects pvt ltd
+test,S2,name,diacritic_fold,bessies preferred advisors llc,bessies preferred advisors llc || bessies preferred ádvisors llc
+test,S2,name,diacritic_fold,gqy primaire sasu,gqy primaire sasu || gqy prîmaire sasu
+test,S2,name,diacritic_fold,hn superior surgical llc,hn superior surgical llc || hn superior súrgical llc
+test,S2,name,legal_removed,commun & frères,commun & freres || commun & freres sarl
+test,S2,name,legal_removed,tlitna,tlitna || tlitna llc
+test,S2,name,legal_removed,बॉम्बे एंटरप्राइजेज फार्मेसी,बॉम्बे एंटरप्राइजेज फार्मेसी प्रा लि || बॉम्बे एंटरप्राइजेज फार्मेसी लिमिटेड
+test,S2,address,lowercase,"13223 maplecrest drive, potomac, md","13223 MAPLECREST DRIVE, POTOMAC, MD || 13223 Maplecrest Drive, POTOMAC, MD"
+test,S2,address,lowercase,"20 rue pelletier doisy, calais, pas-de-calais","20 RUE PELLETIER DOISY, CALAIS, Pas-de-Calais || 20 RUE PELLETIER DOISY, Calais, Pas-de-Calais"
+test,S2,address,lowercase,"6420-6424 jefjen way, elk grove, ca","6420-6424 JEFJEN WAY, ELK GROVE, CA || 6420-6424 Jefjen Way, ELK GROVE, CA"
+test,S2,address,whitespace,"14005 old station rd, louisville, ky","14005  old station rd, louisville, ky || 14005 old station rd, louisville, ky"
+test,S2,address,whitespace,"8321 block house way, knoxville, tn","8321  block house way, knoxville, tn || 8321 block house way, knoxville, tn"
+test,S2,address,whitespace,"908 power rd, mesa desert, az","908  power rd, mesa desert, az || 908 power rd, mesa desert, az"
+test,S2,address,placeholder,"517 palmer street, fall river, ma","517 palmer street, fall river, n/a, ma || 517 palmer street, n/a, fall river, ma"
+test,S2,address,placeholder,"no 112, sr. no 61/2/7, clover citadel 1 opposit salunke vihar, wanawadi, pune, maharashtra","no 112 , sr. no 61/2/7, clover citadel 1 opposit salunke vihar, wanawadi, pune, maharashtra || no 112, sr. no 61/2/7, clover citadel 1 opposit salunke vihar, wanawadi, pune, maharashtra"
+test,S2,address,placeholder,"s.no. ##132/1 office no-3 parth marcantile sus nande, pune, maharashtra","s.no. ##132/1 office no-3 parth marcantile sus nande, pune, maharashtra, null || s.no. ##132/1 office no-3 parth marcantile sus nande, pune, null, maharashtra"
+test,S2,address,punctuation,0116 r du dragon tourcoing hauts de france,"0116 r du dragon, tourcoing, hauts-de-france || 0116 r. du dragon, tourcoing, hauts-de-france"
+test,S2,address,punctuation,61 bangalore karnataka,"#61, bangalore, karnataka || #61., bangalore, karnataka || 61, bangalore, karnataka"
+test,S2,address,punctuation,n 32 r des hortensias pornic loire atlantique,"n° 32 r des hortensias, pornic, loire-atlantique || n° 32 r. des hortensias, pornic, loire-atlantique"
+test,S2,address,diacritic_fold,20 avenue de la milletiere nantes pays de la loire,20 avenue de la milletiere nantes pays de la loire || 20 avenue de la milletière nantes pays de la loire
+test,S2,address,diacritic_fold,84 boulevard de la liberte nantes pays de la loire,84 boulevard de la liberte nantes pays de la loire || 84 boulevard de la liberté nantes pays de la loire
+test,S2,address,diacritic_fold,no 114 rue de lepideme tourcoing,no 114 rue de lepideme tourcoing || no 114 rue de lepidème tourcoing
+test,S3,name,lowercase,blisse's engineering l.l.c.,BLISSE'S ENGINEERING L.L.C. || Blisse'S Engineering L.L.C.
+test,S3,name,lowercase,gowri (india) cars private limited,GOWRI (INDIA) CARS PRIVATE LIMITED || Gowri (India) CARS Private Limited
+test,S3,name,lowercase,lille élémentaire développement sas,Lille Élémentaire Développement SAS || Lille élémentaire Développement Sas
+test,S3,name,whitespace,highrange group of companies limited,highrange group of  companies limited || highrange group of companies limited
+test,S3,name,whitespace,mnk foundation,mnk  foundation || mnk foundation
+test,S3,name,whitespace,swift transport private limited,swift transport private  limited || swift transport private limited
+test,S3,name,punctuation,federal initiative llc,federal initiative (llc) || federal initiative llc
+test,S3,name,punctuation,nantes club international sas,nantes club international [sas] || nantes club international s.a.s || nantes club international s.a.s. || nantes club international sas
+test,S3,name,punctuation,sai software private,*** sai software private || sai software private
+test,S3,name,diacritic_fold,environmental trust iv,environmental trust iv || environmental trúst iv
+test,S3,name,diacritic_fold,hubert & cie sarl,hubert & cie sarl || hubert & çie sarl
+test,S3,name,diacritic_fold,ranitech idea,ranitech idea || ranitech ídea
+test,S3,name,legal_removed,commun & frères,commun & freres sa || commun & freres sarl || commun & freres sasu || commun & freres sci
+test,S3,name,legal_removed,hall list and weston webster,hall list and weston webster co || hall list and weston webster corp
+test,S3,name,legal_removed,reliable cargo alliance,reliable cargo alliance || reliable cargo alliance corp
+test,S3,address,unicode,"No 152 R Des Stations, Lille, Nord","No 152 R Des Stations, Lille, Nord || Nº 152 R Des Stations, Lille, Nord"
+test,S3,address,unicode,"No 37 Rue Des Meuniers, Lille, Hauts-de-France","No 37 Rue Des Meuniers, Lille, Hauts-de-France || Nº 37 Rue Des Meuniers, Lille, Hauts-de-France"
+test,S3,address,unicode,"No 8 Sentier Du Curé, Lille, Nord","No 8 Sentier Du Curé, Lille, Nord || Nº 8 Sentier Du Curé, Lille, Nord"
+test,S3,address,lowercase,"12 avenue hector berlioz, la baule-escoublac, pays de la loire","12 Avenue Hector Berlioz, La Baule-Escoublac, Pays de la Loire || 12 Avenue Hector Berlioz, La Baule-escoublac, Pays de la Loire"
+test,S3,address,lowercase,"89 avenue du général berthelot, la baule-escoublac, pays de la loire","89 Avenue Du Général Berthelot, La Baule-escoublac, Pays de la Loire || 89 Avenue du Général Berthelot, La Baule-Escoublac, Pays de la Loire"
+test,S3,address,lowercase,"plot-740/1270, sub-a-54 dn homes, sundarpur, bhubaneswar, khordha, orissa","Plot-740/1270, Sub-A-54 Dn Homes, Sundarpur, Bhubaneswar, Khordha, Orissa || Plot-740/1270, Sub-a-54 Dn Homes, Sundarpur, Bhubaneswar, Khordha, Orissa"
+test,S3,address,whitespace,"17 forbes st, n/a, worcestr, massachusetts","17  forbes st, n/a, worcestr, massachusetts || 17 forbes st, n/a, worcestr, massachusetts"
+test,S3,address,whitespace,"324 groton road, chelmsford, massachusetts","324  groton road, chelmsford, massachusetts || 324 groton road, chelmsford, massachusetts"
+test,S3,address,whitespace,"4104 saxony pl, missoula ccdp, montana","4104  saxony pl, missoula ccdp, montana || 4104 saxony pl, missoula ccdp, montana"
+test,S3,address,placeholder,"2140 highway 270, sheridan, arkansas","2140 highway 270, null, sheridan, arkansas || 2140 highway 270, sheridan, null, arkansas"
+test,S3,address,placeholder,"holly st, phoenix, arizona","holly st, <null>, phoenix, arizona || holly st, null, phoenix, arizona"
+test,S3,address,placeholder,"no. 42, bangalore, ka","no. 42, bangalore, ka || no. 42, null, bangalore, ka"
+test,S3,address,punctuation,41 r ratisbonne lille,"41 - r ratisbonne, lille || 41 - r. ratisbonne, lille"
+test,S3,address,punctuation,h no 34 gfipcolony faridabad haryana faridabad hr,"h.no 34, g.f.i.p.colony faridabad, haryana, faridabad, hr || h.no. 34, g.f.i.p.colony faridabad, haryana, faridabad, hr"
+test,S3,address,punctuation,no 97 r turgot lille hauts de france,"no 97 r turgot, lille, hauts-de-france || no 97 r. turgot, lille, hauts-de-france"
+test,S3,address,diacritic_fold,44 rue du prieure lille,44 rue du prieure lille || 44 rue du prieuré lille
+test,S3,address,diacritic_fold,78b bd du general leclerc roubaix nord,78b bd du general leclerc roubaix nord || 78b bd du général leclerc roubaix nord
+test,S3,address,diacritic_fold,no 34 rue saint andre pornic,no 34 rue saint andre pornic || no 34 rue saint andré pornic

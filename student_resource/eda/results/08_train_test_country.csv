@@ -1,0 +1,6 @@
+split,country,rows,pct
+train,India,5016534,40.05
+train,US,7510506,59.95
+test,France,1694445,14.48
+test,India,5527551,47.24
+test,US,4480137,38.28

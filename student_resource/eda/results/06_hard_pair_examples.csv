@@ -1,0 +1,19 @@
+case,country,s1_name,m_name,s1_addr,m_addr
+no shared name token,US,"Richardson Mexico, LLC",RICHARDSONMEXICO.COM,"6515 W Fork Road, Cincinnati, OH","OH, WEST FORK ROAD, CINCINNATI"
+no shared name token,US,"Frontier Pyrophyte, Inc",Fpyrophyte.Com,"60 Brookdale Road, Sudbury, MA","60 Brookdale Road, Sudbury, Massachusetts"
+no shared name token,India,Laxmi Universal Investment Private Limited,लक्ष्मी यूनिवर्सल इन्वेस्टमेंट प्राइवेट लिमिटेड,"Shop No.1, Diamond Tower, Unitech Road, Virar West, Palghar, Thane, Maharashtra","SHOP NO.1, PALGHAR, THANE, Maharashtra"
+no shared name token,India,Dream Healthcare Pvt Ltd,డ్రీమ్ హెల్త్‌కేర్ ప్రైవేట్ లిమిటెడ్,"Jubilee Hills, Telangana, Plot No.1112/A Road No.56, Hyderabad","Telangana, JUBILEE HILLS, PLOT NO.1112/A. ROAD NO.56, HYDERABAD"
+match name in non-Latin script,India,Laxmi Universal Investment Private Limited,लक्ष्मी यूनिवर्सल इन्वेस्टमेंट प्राइवेट लिमिटेड,"Shop No.1, Diamond Tower, Unitech Road, Virar West, Palghar, Thane, Maharashtra","SHOP NO.1, PALGHAR, THANE, Maharashtra"
+match name in non-Latin script,India,Dream Healthcare Pvt Ltd,డ్రీమ్ హెల్త్‌కేర్ ప్రైవేట్ లిమిటెడ్,"Jubilee Hills, Telangana, Plot No.1112/A Road No.56, Hyderabad","Telangana, JUBILEE HILLS, PLOT NO.1112/A. ROAD NO.56, HYDERABAD"
+"same tokens, different order",US,"Richardson Mexico, LLC","Richardson LLC Mexico,","6515 W Fork Road, Cincinnati, OH","6515 1/2 West Fork Rd, Cincinnati, Ohio"
+"same tokens, different order",US,Beamon Midstream Inc.,INC. BEAMON MIDSTREAM,"3424 Taylor Street, Fort Wayne, IN","Indiana, 3424 Tayolr St, Wayne"
+"same tokens, different order",India,Laxmi Construction (India) Pvt Ltd,Laxmi  Ltd (India) Pvt Construction,"Haiwatmau Mawaiya Rbl Road, Lucknow, Uttar Pradesh","Haiwatmau Mawaiya Rbl Road, Lucknow, UP"
+"same tokens, different order",India,Refine & Brothers Private Limited,private refine & brothers limited,"3/186, Near Pacb, Navakkurichi Post, Attur, Salem, Tamil Nadu","NEAR PACB, NAVAKKURICHI POST, 3/186, Tamil Nadu, ATTUR, SALEM"
+match address missing,US,"Richardson Mexico, LLC","Richardson México, LLC","6515 W Fork Road, Cincinnati, OH",
+match address missing,US,"Richardson Mexico, LLC","Richardson Mexico,","6515 W Fork Road, Cincinnati, OH",
+match address missing,India,Kunal & Brothers Pvt Ltd,KUNAL  & BROTHERS PVT LTD,"Bejoy Deep Building 41Sevoke Road, Siliguri, Darjeeling, West Bengal",
+match address missing,India,Suryaksh It Private Limited,SURYAKSH IT PRIVATE,"D-1/5 Ground Floor Kh. No.-362 Gali No-1 Ashok Nagar Near By Behind Dda Mg Flats, Delhi, East Delhi, Delhi",
+low address overlap (<0.2) despite equal name,US,Pediatric Dental Grand Group,Pediatric Dental Grand [Group],"2812 149th Street, Urbandale, IA","2812 149nd St, PO Box 4825, Urbandale, Iowa"
+low address overlap (<0.2) despite equal name,US,"Borden Ridge Advertising, LLC","borden ridge advertising, llc","1 Mapleline Road, Clifton Park, NY","1- Mapleline Rd, Ballston Lake, New York"
+low address overlap (<0.2) despite equal name,India,Everest Technology Private Limited,Everest Technology Private-Limited,"Plot No.852, 853 Sy.No 11/14 To 11/18, Sa Society, Madhapur, Rangareddy, Telangana","Andhra Pradesh, H.no 52, Rangareddy, Madhapur"
+low address overlap (<0.2) despite equal name,India,Rajat (India) Fresh Private Limited,Rajat (India) Fresh Private [Limited],"Plot No. 48, H.No.30-253/2/24, Laxmi Nagar, Phase 1, Old Safilguda, Near Yashoda Krishna Apts, Po Rk Puram, Tirumalagiri, Hyderabad, Telangana","48, Tirumalagiri, Hyderabad, TG"

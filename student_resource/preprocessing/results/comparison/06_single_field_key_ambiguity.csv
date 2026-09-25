@@ -1,0 +1,5 @@
+key,pct_records_in_collisions_train,pct_records_in_collisions_test,max_group_train,max_group_test,pct_records_in_mixed_groups
+name_raw only,38.3078,35.9952,253,205,15.466
+name_clean only,39.4598,36.7693,253,205,22.279
+name_base only,50.0661,47.0534,575,516,32.246
+address_clean only,5.3155,5.3739,14,101,

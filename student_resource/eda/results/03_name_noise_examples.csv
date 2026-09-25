@@ -1,0 +1,37 @@
+pattern,entity_id,country,business_name
+url_or_domain,S2-89371166,India,dineshindiaagency.com
+url_or_domain,S2-542732821,US,apexcrest.com
+url_or_domain,S3-976003929,US,doralynlackeyrobinhood.com
+url_or_domain,S3-499111004,US,maidpizza.com
+non_latin_script,S2-414010221,India,વિજય કન્સ્ટ્રક્શન્સ
+non_latin_script,S2-999759387,India,हाई प्रॉपर्टीज प्राइवेट लिमिटेड
+non_latin_script,S3-987949855,India,Southern பவர்
+non_latin_script,S3-575525905,India,शिवा यूनाइटेड इंडस्ट्रीज प्राइवेट लिमिटेड
+latin_diacritics,S2-978126813,India,Private Ambernath Sólar Limited
+latin_diacritics,S2-377895888,US,"Marline B. B. Mátos, D.C."
+latin_diacritics,S3-258774916,India,Gujarat Digital Cáre Private Limited
+latin_diacritics,S3-334573368,US,Chapple Bold óf Newport Town Inc.
+all_upper,S2-308442620,US,JP  MONTREAL
+all_upper,S2-390971137,US,SOUTHERN  DIAMOND INC SERVICE
+all_upper,S3-54455761,US,PEAK FRESENIUS INC
+all_upper,S3-214773216,India,MODERN ESTATE PRIVATE LIMITED
+all_lower,S2-718979866,US,physical therapy specialists
+all_lower,S2-89371166,India,dineshindiaagency.com
+all_lower,S3-976003929,US,doralynlackeyrobinhood.com
+all_lower,S3-593419985,US,llc premier citizens
+repeated_space,S2-308442620,US,JP  MONTREAL
+repeated_space,S2-390971137,US,SOUTHERN  DIAMOND INC SERVICE
+repeated_space,S3-118652570,US,Wildlife Guild  LLC
+repeated_space,S3-169505996,India,Sav  Services Private (Limited)
+odd_symbols,S1-935829615,US,#1 Telecom
+odd_symbols,S1-751772269,US,#6 Renatus
+odd_symbols,S2-564812597,India,*** Shiv Impex Pvt
+odd_symbols,S2-187572852,US,Illa's Strategic [Networks]
+odd_symbols,S3-210476563,US,[Llc] East Hea1th Center
+odd_symbols,S3-912624947,India,Mumbai Properties Infratech [Pvt]
+has_digit,S1-392451496,US,4678 Commerce Road Associates
+has_digit,S1-21488592,US,Ironworkers Local Union 287 Inc.
+has_digit,S2-882907234,US,Leopo1d Safe Consulting LLC
+has_digit,S2-195373941,US,2036 Commerce Plaza Properties [PC]
+has_digit,S3-921372917,US,Shaffer Xcblla LLC - 7934786696
+has_digit,S3-210476563,US,[Llc] East Hea1th Center

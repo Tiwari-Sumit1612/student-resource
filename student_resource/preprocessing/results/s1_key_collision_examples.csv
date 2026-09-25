@@ -1,0 +1,29 @@
+split,key,entity_id,business_name_raw,business_address_raw,country_clean,k0,k1
+train,name_base + address_clean,S1-778720701,Bobinette Becerril All Physical LP,"2920 Max Loop, Badger, AK",US,bobinette becerril all physical,2920 max loop badger ak
+train,name_base + address_clean,S1-668405556,Bobinette Becerril All Physical LLC,"2920 Max Loop, Badger, AK",US,bobinette becerril all physical,2920 max loop badger ak
+train,name_base + address_clean,S1-813427750,"Colburn, Shannon & Buzzard","3905 Kleitz Road, Evansville, IN",US,colburn shannon & buzzard,3905 kleitz road evansville in
+train,name_base + address_clean,S1-640479829,"Colburn, Shannon & Buzzard Inc","3905 Kleitz Road, Evansville, IN",US,colburn shannon & buzzard,3905 kleitz road evansville in
+train,name_base + address_clean,S1-984803837,FKO Agents Limited,"Khasra No. 175, 170, 90/2, 176, Pipliya Dhakad, Huzur, Bhopal, Madhya Pradesh",India,fko agents,khasra no 175 170 90 2 176 pipliya dhakad huzur bhopal madhya pradesh
+train,name_base + address_clean,S1-598232727,FKO Agents Corp,"Khasra No. 175, 170, 90/2, 176, Pipliya Dhakad, Huzur, Bhopal, Madhya Pradesh",India,fko agents,khasra no 175 170 90 2 176 pipliya dhakad huzur bhopal madhya pradesh
+train,name_base + address_clean,S1-256915606,Lloyd and Poore P.C.,"498 Olde Mill Drive, Westerville, OH",US,lloyd and poore,498 olde mill drive westerville oh
+train,name_base + address_clean,S1-96188450,Lloyd and Poore LP,"498 Olde Mill Drive, Westerville, OH",US,lloyd and poore,498 olde mill drive westerville oh
+test,name_clean + address_clean,S1-202327133,Lille Club SAS,"72-74 RUE Royale, Maison des associations, Lille, Hauts-de-France",France,lille club sas,72 74 rue royale maison des associations lille hauts de france
+test,name_clean + address_clean,S1-628518958,Lille Club SAS,"72 -74 RUE Royale, Maison des Associations, Lille, Hauts-de-France",France,lille club sas,72 74 rue royale maison des associations lille hauts de france
+test,folded name_clean + folded address_clean,S1-202327133,Lille Club SAS,"72-74 RUE Royale, Maison des associations, Lille, Hauts-de-France",France,lille club sas,72 74 rue royale maison des associations lille hauts de france
+test,folded name_clean + folded address_clean,S1-628518958,Lille Club SAS,"72 -74 RUE Royale, Maison des Associations, Lille, Hauts-de-France",France,lille club sas,72 74 rue royale maison des associations lille hauts de france
+test,name_base + address_clean,S1-202327133,Lille Club SAS,"72-74 RUE Royale, Maison des associations, Lille, Hauts-de-France",France,lille club,72 74 rue royale maison des associations lille hauts de france
+test,name_base + address_clean,S1-628518958,Lille Club SAS,"72 -74 RUE Royale, Maison des Associations, Lille, Hauts-de-France",France,lille club,72 74 rue royale maison des associations lille hauts de france
+test,name_base + address_clean,S1-815287809,Lille Comite SAS,"254 BD de lUsine, Lille, Hauts-de-France",France,lille comite,254 bd de lusine lille hauts de france
+test,name_base + address_clean,S1-956487720,Lille Comite SA,"254 BD de lUsine, Lille, Hauts-de-France",France,lille comite,254 bd de lusine lille hauts de france
+test,name_base + address_clean,S1-238917098,Lille Ecole SAS,"57 RUE Pierre Mauroy, Lille, Hauts-de-France",France,lille ecole,57 rue pierre mauroy lille hauts de france
+test,name_base + address_clean,S1-56505037,Lille Ecole SA,"57 RUE Pierre Mauroy, Lille, Hauts-de-France",France,lille ecole,57 rue pierre mauroy lille hauts de france
+test,name_base + address_clean,S1-946801568,Lille Sante SARL,"12 RUE Lyderic, Lille, Hauts-de-France",France,lille sante,12 rue lyderic lille hauts de france
+test,name_base + address_clean,S1-782898301,Lille Sante SCI,"12 RUE Lyderic, Lille, Hauts-de-France",France,lille sante,12 rue lyderic lille hauts de france
+test,name_base + address_clean,S1-127047096,Orthopedic Center LLC,"158 Travelers Way, Lillington, NC",US,orthopedic center,158 travelers way lillington nc
+test,name_base + address_clean,S1-490456275,Orthopedic Center Inc,"158 Travelers Way, Lillington, NC",US,orthopedic center,158 travelers way lillington nc
+test,sorted name_tokens + sorted address_tokens,S1-514042271,Bramley School of Medicine Inc.,"49 Academy Street, Patchogue, NY",US,bramley inc medicine of school,49 academy ny patchogue street
+test,sorted name_tokens + sorted address_tokens,S1-713512857,Bramley School of Medicine Inc,"Patchogue, 49 Academy Street, NY",US,bramley inc medicine of school,49 academy ny patchogue street
+test,sorted name_tokens + sorted address_tokens,S1-202327133,Lille Club SAS,"72-74 RUE Royale, Maison des associations, Lille, Hauts-de-France",France,club lille sas,72 74 associations de des france hauts lille maison royale rue
+test,sorted name_tokens + sorted address_tokens,S1-628518958,Lille Club SAS,"72 -74 RUE Royale, Maison des Associations, Lille, Hauts-de-France",France,club lille sas,72 74 associations de des france hauts lille maison royale rue
+test,sorted name_tokens + sorted address_tokens,S1-773703824,Lille Ecole SARL,"Maison des Associations, Hauts-de-France, 27 RUE Jean Bart, Lille",France,ecole lille sarl,27 associations bart de des france hauts jean lille maison rue
+test,sorted name_tokens + sorted address_tokens,S1-498685195,Lille Ecole SARL,"27 RUE Jean Bart, MAISON DES ASSOCIATIONS, Lille, Hauts-de-France",France,ecole lille sarl,27 associations bart de des france hauts jean lille maison rue

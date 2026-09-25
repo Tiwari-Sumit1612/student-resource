@@ -1,0 +1,6 @@
+split,country,rows,non_ascii,latin_diacritics,non_latin_script,url_or_domain,all_upper,repeated_space
+train,India,5016534,19.01,4.0,15.01,2.9,7.1,8.48
+train,US,7510506,5.56,5.56,0.0,3.55,10.01,9.38
+test,France,1694445,22.93,22.93,0.0,2.93,11.06,7.21
+test,India,5527551,19.48,3.79,15.69,2.44,6.98,8.56
+test,US,4480137,5.39,5.39,0.0,3.03,9.92,9.47

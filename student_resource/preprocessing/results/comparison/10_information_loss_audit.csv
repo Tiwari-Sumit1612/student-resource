@@ -1,0 +1,9 @@
+item,where,still_available_in
+case (lowercase),"name_norm/clean, address_norm/clean","business_*_raw, *_is_upper flags"
+punctuation symbols (+ @ % $ # / .),"name_clean, address_clean, tokens","name_norm, address_norm"
+apostrophes / dotted acronyms joined,*_clean,*_norm
+placeholder segments NULL/null/<NULL>/N/A,"address_clean, address_segments, address_numbers","address_norm, address_has_placeholder"
+leading zeros in numbers,address_numbers,address_norm (T.numbers)
+accents (on demand only),T.fold_diacritics output (not stored),all stored columns
+legal-form tokens,name_base,"name_clean, name_legal_forms"
+zero-width joiners / control chars / mojibake bytes,all *_norm and later,"business_*_raw, *_has_encoding_artifact"

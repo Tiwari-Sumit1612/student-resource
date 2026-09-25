@@ -1,0 +1,253 @@
+split,source,v,len,field,kind
+train,S1,5,251720,name,raw (whitespace tokens)
+train,S1,7,5712,name,raw (whitespace tokens)
+train,S1,10,115,name,raw (whitespace tokens)
+train,S1,2,308875,name,raw (whitespace tokens)
+train,S1,1,15417,name,raw (whitespace tokens)
+train,S1,11,40,name,raw (whitespace tokens)
+train,S1,12,27,name,raw (whitespace tokens)
+train,S1,3,690161,name,raw (whitespace tokens)
+train,S1,8,1216,name,raw (whitespace tokens)
+train,S1,6,39594,name,raw (whitespace tokens)
+train,S1,4,893602,name,raw (whitespace tokens)
+train,S1,9,342,name,raw (whitespace tokens)
+train,S1,1,14598,name,clean tokens
+train,S1,5,255352,name,clean tokens
+train,S1,2,305023,name,clean tokens
+train,S1,11,53,name,clean tokens
+train,S1,3,687059,name,clean tokens
+train,S1,6,40888,name,clean tokens
+train,S1,10,121,name,clean tokens
+train,S1,9,359,name,clean tokens
+train,S1,7,6083,name,clean tokens
+train,S1,8,1332,name,clean tokens
+train,S1,4,895922,name,clean tokens
+train,S1,12,31,name,clean tokens
+train,S1,6,386899,address,raw (whitespace tokens)
+train,S1,14,57898,address,raw (whitespace tokens)
+train,S1,29,68,address,raw (whitespace tokens)
+train,S1,11,107850,address,raw (whitespace tokens)
+train,S1,25,458,address,raw (whitespace tokens)
+train,S1,3,398,address,raw (whitespace tokens)
+train,S1,8,183084,address,raw (whitespace tokens)
+train,S1,17,23380,address,raw (whitespace tokens)
+train,S1,26,314,address,raw (whitespace tokens)
+train,S1,9,136818,address,raw (whitespace tokens)
+train,S1,12,92400,address,raw (whitespace tokens)
+train,S1,24,801,address,raw (whitespace tokens)
+train,S1,4,35722,address,raw (whitespace tokens)
+train,S1,10,121398,address,raw (whitespace tokens)
+train,S1,28,106,address,raw (whitespace tokens)
+train,S1,5,615873,address,raw (whitespace tokens)
+train,S1,22,2655,address,raw (whitespace tokens)
+train,S1,21,4302,address,raw (whitespace tokens)
+train,S1,27,151,address,raw (whitespace tokens)
+train,S1,2,8,address,raw (whitespace tokens)
+train,S1,30,118,address,raw (whitespace tokens)
+train,S1,18,16314,address,raw (whitespace tokens)
+train,S1,23,1445,address,raw (whitespace tokens)
+train,S1,13,74682,address,raw (whitespace tokens)
+train,S1,19,10913,address,raw (whitespace tokens)
+train,S1,16,32314,address,raw (whitespace tokens)
+train,S1,7,249676,address,raw (whitespace tokens)
+train,S1,15,43850,address,raw (whitespace tokens)
+train,S1,20,6926,address,raw (whitespace tokens)
+train,S1,19,17972,address,clean tokens
+train,S1,25,1269,address,clean tokens
+train,S1,3,236,address,clean tokens
+train,S1,18,25231,address,clean tokens
+train,S1,24,2152,address,clean tokens
+train,S1,23,3533,address,clean tokens
+train,S1,8,156357,address,clean tokens
+train,S1,4,33626,address,clean tokens
+train,S1,15,59330,address,clean tokens
+train,S1,14,72509,address,clean tokens
+train,S1,13,87926,address,clean tokens
+train,S1,16,45272,address,clean tokens
+train,S1,22,5519,address,clean tokens
+train,S1,30,374,address,clean tokens
+train,S1,9,115797,address,clean tokens
+train,S1,27,509,address,clean tokens
+train,S1,2,8,address,clean tokens
+train,S1,6,371958,address,clean tokens
+train,S1,5,603702,address,clean tokens
+train,S1,17,34344,address,clean tokens
+train,S1,20,12781,address,clean tokens
+train,S1,26,819,address,clean tokens
+train,S1,29,175,address,clean tokens
+train,S1,11,107227,address,clean tokens
+train,S1,21,8513,address,clean tokens
+train,S1,12,100386,address,clean tokens
+train,S1,7,230374,address,clean tokens
+train,S1,10,108630,address,clean tokens
+train,S1,28,292,address,clean tokens
+train,S2,4,1676336,name,raw (whitespace tokens)
+train,S2,8,6811,name,raw (whitespace tokens)
+train,S2,9,1434,name,raw (whitespace tokens)
+train,S2,10,382,name,raw (whitespace tokens)
+train,S2,5,722535,name,raw (whitespace tokens)
+train,S2,6,182305,name,raw (whitespace tokens)
+train,S2,2,727984,name,raw (whitespace tokens)
+train,S2,3,1370137,name,raw (whitespace tokens)
+train,S2,1,312149,name,raw (whitespace tokens)
+train,S2,12,58,name,raw (whitespace tokens)
+train,S2,11,107,name,raw (whitespace tokens)
+train,S2,7,34378,name,raw (whitespace tokens)
+train,S2,4,1719991,name,clean tokens
+train,S2,11,131,name,clean tokens
+train,S2,5,736124,name,clean tokens
+train,S2,6,188701,name,clean tokens
+train,S2,7,38940,name,clean tokens
+train,S2,1,106469,name,clean tokens
+train,S2,9,1955,name,clean tokens
+train,S2,2,864085,name,clean tokens
+train,S2,10,502,name,clean tokens
+train,S2,12,81,name,clean tokens
+train,S2,3,1368882,name,clean tokens
+train,S2,8,8755,name,clean tokens
+train,S2,7,475792,address,raw (whitespace tokens)
+train,S2,15,80444,address,raw (whitespace tokens)
+train,S2,18,27928,address,raw (whitespace tokens)
+train,S2,26,461,address,raw (whitespace tokens)
+train,S2,12,174366,address,raw (whitespace tokens)
+train,S2,9,251078,address,raw (whitespace tokens)
+train,S2,17,41626,address,raw (whitespace tokens)
+train,S2,4,219463,address,raw (whitespace tokens)
+train,S2,29,101,address,raw (whitespace tokens)
+train,S2,24,1359,address,raw (whitespace tokens)
+train,S2,2,302,address,raw (whitespace tokens)
+train,S2,10,230982,address,raw (whitespace tokens)
+train,S2,28,207,address,raw (whitespace tokens)
+train,S2,6,1037539,address,raw (whitespace tokens)
+train,S2,,168967,address,raw (whitespace tokens)
+train,S2,27,273,address,raw (whitespace tokens)
+train,S2,3,25058,address,raw (whitespace tokens)
+train,S2,21,6891,address,raw (whitespace tokens)
+train,S2,16,58225,address,raw (whitespace tokens)
+train,S2,5,1443279,address,raw (whitespace tokens)
+train,S2,14,107710,address,raw (whitespace tokens)
+train,S2,25,722,address,raw (whitespace tokens)
+train,S2,11,207174,address,raw (whitespace tokens)
+train,S2,20,11574,address,raw (whitespace tokens)
+train,S2,19,18170,address,raw (whitespace tokens)
+train,S2,8,298488,address,raw (whitespace tokens)
+train,S2,22,4017,address,raw (whitespace tokens)
+train,S2,30,228,address,raw (whitespace tokens)
+train,S2,13,139945,address,raw (whitespace tokens)
+train,S2,23,2247,address,raw (whitespace tokens)
+train,S2,8,274691,address,clean tokens
+train,S2,27,888,address,clean tokens
+train,S2,6,975924,address,clean tokens
+train,S2,10,217946,address,clean tokens
+train,S2,18,45977,address,clean tokens
+train,S2,5,1386114,address,clean tokens
+train,S2,20,22300,address,clean tokens
+train,S2,4,202016,address,clean tokens
+train,S2,3,14475,address,clean tokens
+train,S2,26,1396,address,clean tokens
+train,S2,24,3683,address,clean tokens
+train,S2,25,2210,address,clean tokens
+train,S2,2,126,address,clean tokens
+train,S2,22,9581,address,clean tokens
+train,S2,14,138480,address,clean tokens
+train,S2,28,550,address,clean tokens
+train,S2,9,227010,address,clean tokens
+train,S2,11,211865,address,clean tokens
+train,S2,23,5980,address,clean tokens
+train,S2,29,349,address,clean tokens
+train,S2,12,194210,address,clean tokens
+train,S2,,168967,address,clean tokens
+train,S2,16,84043,address,clean tokens
+train,S2,17,62816,address,clean tokens
+train,S2,21,14815,address,clean tokens
+train,S2,19,32698,address,clean tokens
+train,S2,15,109118,address,clean tokens
+train,S2,13,167769,address,clean tokens
+train,S2,7,457942,address,clean tokens
+train,S2,30,677,address,clean tokens
+train,S3,2,747854,name,raw (whitespace tokens)
+train,S3,8,19050,name,raw (whitespace tokens)
+train,S3,5,771461,name,raw (whitespace tokens)
+train,S3,6,241671,name,raw (whitespace tokens)
+train,S3,4,1657974,name,raw (whitespace tokens)
+train,S3,3,1380632,name,raw (whitespace tokens)
+train,S3,12,111,name,raw (whitespace tokens)
+train,S3,11,246,name,raw (whitespace tokens)
+train,S3,1,396527,name,raw (whitespace tokens)
+train,S3,7,63762,name,raw (whitespace tokens)
+train,S3,9,5173,name,raw (whitespace tokens)
+train,S3,10,1142,name,raw (whitespace tokens)
+train,S3,12,184,name,clean tokens
+train,S3,3,1374041,name,clean tokens
+train,S3,11,484,name,clean tokens
+train,S3,7,77365,name,clean tokens
+train,S3,8,34368,name,clean tokens
+train,S3,4,1703913,name,clean tokens
+train,S3,5,774302,name,clean tokens
+train,S3,2,887170,name,clean tokens
+train,S3,6,240754,name,clean tokens
+train,S3,9,11057,name,clean tokens
+train,S3,1,179441,name,clean tokens
+train,S3,10,2524,name,clean tokens
+train,S3,4,252448,address,raw (whitespace tokens)
+train,S3,8,447157,address,raw (whitespace tokens)
+train,S3,19,17790,address,raw (whitespace tokens)
+train,S3,2,774,address,raw (whitespace tokens)
+train,S3,1,1,address,raw (whitespace tokens)
+train,S3,16,50783,address,raw (whitespace tokens)
+train,S3,13,115936,address,raw (whitespace tokens)
+train,S3,17,37045,address,raw (whitespace tokens)
+train,S3,7,718836,address,raw (whitespace tokens)
+train,S3,14,91050,address,raw (whitespace tokens)
+train,S3,9,310259,address,raw (whitespace tokens)
+train,S3,,175916,address,raw (whitespace tokens)
+train,S3,20,11508,address,raw (whitespace tokens)
+train,S3,24,1390,address,raw (whitespace tokens)
+train,S3,28,182,address,raw (whitespace tokens)
+train,S3,15,68030,address,raw (whitespace tokens)
+train,S3,3,81500,address,raw (whitespace tokens)
+train,S3,22,4517,address,raw (whitespace tokens)
+train,S3,29,104,address,raw (whitespace tokens)
+train,S3,30,200,address,raw (whitespace tokens)
+train,S3,12,144419,address,raw (whitespace tokens)
+train,S3,21,7264,address,raw (whitespace tokens)
+train,S3,18,25849,address,raw (whitespace tokens)
+train,S3,23,2586,address,raw (whitespace tokens)
+train,S3,5,1218266,address,raw (whitespace tokens)
+train,S3,26,479,address,raw (whitespace tokens)
+train,S3,6,1106905,address,raw (whitespace tokens)
+train,S3,11,173597,address,raw (whitespace tokens)
+train,S3,25,859,address,raw (whitespace tokens)
+train,S3,27,277,address,raw (whitespace tokens)
+train,S3,10,219676,address,raw (whitespace tokens)
+train,S3,1,1,address,clean tokens
+train,S3,16,73176,address,clean tokens
+train,S3,,175916,address,clean tokens
+train,S3,24,4019,address,clean tokens
+train,S3,23,6360,address,clean tokens
+train,S3,29,335,address,clean tokens
+train,S3,11,180489,address,clean tokens
+train,S3,30,672,address,clean tokens
+train,S3,5,1174876,address,clean tokens
+train,S3,6,1096611,address,clean tokens
+train,S3,17,55370,address,clean tokens
+train,S3,8,428658,address,clean tokens
+train,S3,15,93190,address,clean tokens
+train,S3,12,160263,address,clean tokens
+train,S3,9,285145,address,clean tokens
+train,S3,26,1480,address,clean tokens
+train,S3,4,214300,address,clean tokens
+train,S3,28,524,address,clean tokens
+train,S3,27,925,address,clean tokens
+train,S3,7,708688,address,clean tokens
+train,S3,25,2407,address,clean tokens
+train,S3,22,9733,address,clean tokens
+train,S3,13,138457,address,clean tokens
+train,S3,19,30323,address,clean tokens
+train,S3,14,116134,address,clean tokens
+train,S3,3,38213,address,clean tokens
+train,S3,21,14591,address,clean tokens
+train,S3,18,41607,address,clean tokens
+train,S3,20,21224,address,clean tokens
+train,S3,10,211393,address,clean tokens
+train,S3,2,523,address,clean tokens

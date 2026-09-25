@@ -1,0 +1,6 @@
+case,pct_of_pairs
+no shared name token,14.43
+match name in non-Latin script,7.32
+"same tokens, different order",5.04
+match address missing,4.38
+low address overlap (<0.2) despite equal name,0.42

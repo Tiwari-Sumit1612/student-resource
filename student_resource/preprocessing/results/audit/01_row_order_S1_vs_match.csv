@@ -1,0 +1,5 @@
+src,pairing,pairs,spearman_row_position,spearman_numeric_id,mean_abs_position_gap,pct_within_0_1pct_of_file,pct_within_1pct_of_file
+S2,random pairing,3693619,0.00074,-0.00007,0.33316,0.2021,1.984
+S2,true pairs,3693619,0.00095,0.00012,0.33318,0.1968,1.993
+S3,random pairing,3944746,0.00023,-0.00004,0.33341,0.1967,1.9838
+S3,true pairs,3944746,-0.00066,0.00016,0.33354,0.198,1.9803

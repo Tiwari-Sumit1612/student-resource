@@ -1,0 +1,7 @@
+split,source,name_chars_raw_mean,name_chars_clean_mean,name_chars_raw_p50,name_chars_clean_p50,name_chars_raw_p95,name_chars_clean_p95,name_tokens_raw_mean,name_tokens_clean_mean,name_pct_more_tokens_after,name_pct_fewer_tokens_after,address_chars_raw_mean,address_chars_clean_mean,address_chars_raw_p50,address_chars_clean_p50,address_chars_raw_p95,address_chars_clean_p95,address_tokens_raw_mean,address_tokens_clean_mean,address_pct_more_tokens_after,address_pct_fewer_tokens_after
+train,S1,24.03,23.74,24.0,24.0,37.0,36.0,3.548,3.557,1.002,0.059,52.07,48.62,41.0,38.0,103.0,96.0,8.032,8.471,25.548,0.925
+train,S2,25.1,24.49,25.0,24.0,40.0,40.0,3.497,3.576,9.394,1.745,47.83,44.36,37.0,35.0,97.0,90.0,7.538,7.995,28.677,4.104
+train,S3,25.2,24.59,25.0,24.0,42.0,41.0,3.525,3.624,10.614,1.697,48.32,44.87,42.0,39.0,92.0,85.0,7.419,7.833,28.205,6.033
+test,S1,23.84,23.59,24.0,23.0,36.0,36.0,3.522,3.534,1.025,0.045,57.21,53.56,50.0,48.0,105.0,98.0,8.588,9.307,41.861,1.075
+test,S2,25.7,25.14,25.0,25.0,42.0,41.0,3.586,3.655,8.025,1.424,51.78,48.17,43.0,41.0,99.0,93.0,8.01,8.646,38.576,3.994
+test,S3,25.66,25.1,25.0,25.0,42.0,41.0,3.596,3.681,9.078,1.427,50.08,46.55,44.0,41.0,95.0,88.0,7.719,8.327,38.456,4.742

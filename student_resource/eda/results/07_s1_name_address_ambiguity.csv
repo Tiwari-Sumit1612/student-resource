@@ -1,0 +1,8 @@
+split,country,rows,pct_name_shared,pct_addr_shared,pct_name+addr_shared,pct_name+addr_digits_shared,pct_repeated_names_resolved_by_addr,pct_repeated_names_resolved_by_addr_digits,max_name_group
+train,India,883188,44.22,4.84,0.0,2.72,100.0,93.85,99
+train,US,1323633,35.84,5.62,0.0,0.22,100.0,99.39,253
+train,ALL,2206821,39.19,5.31,0.0,1.22,100.0,96.89,253
+test,France,259452,34.07,10.77,0.0,3.64,100.0,89.31,205
+test,India,809986,43.56,4.73,0.0,2.63,100.0,93.96,110
+test,US,663106,29.16,4.04,0.0,0.1,100.0,99.65,123
+test,ALL,1732544,36.63,5.37,0.0,1.81,100.0,95.05,205

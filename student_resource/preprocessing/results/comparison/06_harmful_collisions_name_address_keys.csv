@@ -1,0 +1,7 @@
+key,s1_entities_merged_train,s1_entities_merged_test,s1_merge_groups_train,s1_merge_groups_test,s2s3_groups_mixing_entities,s2s3_records_in_mixed_groups,s2s3_groups_gt1
+name_raw + address_raw,0,0,0,0,0,0,43037
+name_norm + address_norm,0,0,0,0,0,0,77601
+name_clean + address_clean,0,2,0,1,1,2,114605
+folded name_clean + folded address_clean,0,2,0,1,1,2,136899
+name_base + address_clean,8,61,4,30,7,14,251994
+sorted name_tokens + sorted address_tokens,0,6,0,3,1,2,201854

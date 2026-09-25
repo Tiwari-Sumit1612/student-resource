@@ -1,0 +1,150 @@
+check,split,source,expected,observed,passed
+row count unchanged,train,S1,2206821,2206821,true
+entity_id unique,train,S1,2206821,2206821,true
+raw ids missing from output,train,S1,0,0,true
+output ids not in raw,train,S1,0,0,true
+entity_id prefix matches source,train,S1,0,0,true
+row order identical to raw file (row i = raw row i),train,S1,True,True,true
+split/source columns constant,train,S1,1,1,true
+raw field preserved: business_name,train,S1,0,0,true
+raw field preserved: business_address,train,S1,0,0,true
+raw field preserved: country,train,S1,0,0,true
+no unicode replacement chars in raw fields (strict UTF-8 read),train,S1,0,0,true
+country distribution unchanged (raw vs country_clean),train,S1,0,0,true
+country_clean differs from stripped country_raw,train,S1,0,0,true
+missing flag == raw nulls: business_name,train,S1,0,0,true
+missing flag == raw nulls: business_address,train,S1,0,0,true
+missing flag == raw nulls: country,train,S1,0,0,true
+raw name non-null -> name_norm non-null,train,S1,0,0,true
+raw address non-null -> address_norm non-null,train,S1,0,0,true
+empty name_clean always flagged (name_clean_empty),train,S1,0,0,true
+empty address_clean always flagged (address_placeholder_only),train,S1,0,0,true
+tokens rejoin exactly to clean string,train,S1,0,0,true
+all digits of name_norm survive in name_clean (same order),train,S1,0,0,true
+deterministic: two rebuilds of 1% sample identical,train,S1,True,True,true
+deterministic: rebuild equals stored parquet (1% sample),train,S1,True,True,true
+row count unchanged,train,S2,5034616,5034616,true
+entity_id unique,train,S2,5034616,5034616,true
+raw ids missing from output,train,S2,0,0,true
+output ids not in raw,train,S2,0,0,true
+entity_id prefix matches source,train,S2,0,0,true
+row order identical to raw file (row i = raw row i),train,S2,True,True,true
+split/source columns constant,train,S2,1,1,true
+raw field preserved: business_name,train,S2,0,0,true
+raw field preserved: business_address,train,S2,0,0,true
+raw field preserved: country,train,S2,0,0,true
+no unicode replacement chars in raw fields (strict UTF-8 read),train,S2,0,0,true
+country distribution unchanged (raw vs country_clean),train,S2,0,0,true
+country_clean differs from stripped country_raw,train,S2,0,0,true
+missing flag == raw nulls: business_name,train,S2,0,0,true
+missing flag == raw nulls: business_address,train,S2,168967,168967,true
+missing flag == raw nulls: country,train,S2,0,0,true
+raw name non-null -> name_norm non-null,train,S2,0,0,true
+raw address non-null -> address_norm non-null,train,S2,0,0,true
+empty name_clean always flagged (name_clean_empty),train,S2,0,0,true
+empty address_clean always flagged (address_placeholder_only),train,S2,0,0,true
+tokens rejoin exactly to clean string,train,S2,0,0,true
+all digits of name_norm survive in name_clean (same order),train,S2,0,0,true
+deterministic: two rebuilds of 1% sample identical,train,S2,True,True,true
+deterministic: rebuild equals stored parquet (1% sample),train,S2,True,True,true
+row count unchanged,train,S3,5285603,5285603,true
+entity_id unique,train,S3,5285603,5285603,true
+raw ids missing from output,train,S3,0,0,true
+output ids not in raw,train,S3,0,0,true
+entity_id prefix matches source,train,S3,0,0,true
+row order identical to raw file (row i = raw row i),train,S3,True,True,true
+split/source columns constant,train,S3,1,1,true
+raw field preserved: business_name,train,S3,0,0,true
+raw field preserved: business_address,train,S3,0,0,true
+raw field preserved: country,train,S3,0,0,true
+no unicode replacement chars in raw fields (strict UTF-8 read),train,S3,0,0,true
+country distribution unchanged (raw vs country_clean),train,S3,0,0,true
+country_clean differs from stripped country_raw,train,S3,0,0,true
+missing flag == raw nulls: business_name,train,S3,0,0,true
+missing flag == raw nulls: business_address,train,S3,175916,175916,true
+missing flag == raw nulls: country,train,S3,0,0,true
+raw name non-null -> name_norm non-null,train,S3,0,0,true
+raw address non-null -> address_norm non-null,train,S3,0,0,true
+empty name_clean always flagged (name_clean_empty),train,S3,0,0,true
+empty address_clean always flagged (address_placeholder_only),train,S3,0,0,true
+tokens rejoin exactly to clean string,train,S3,0,0,true
+all digits of name_norm survive in name_clean (same order),train,S3,0,0,true
+deterministic: two rebuilds of 1% sample identical,train,S3,True,True,true
+deterministic: rebuild equals stored parquet (1% sample),train,S3,True,True,true
+row count unchanged,test,S1,1732544,1732544,true
+entity_id unique,test,S1,1732544,1732544,true
+raw ids missing from output,test,S1,0,0,true
+output ids not in raw,test,S1,0,0,true
+entity_id prefix matches source,test,S1,0,0,true
+row order identical to raw file (row i = raw row i),test,S1,True,True,true
+split/source columns constant,test,S1,1,1,true
+raw field preserved: business_name,test,S1,0,0,true
+raw field preserved: business_address,test,S1,0,0,true
+raw field preserved: country,test,S1,0,0,true
+no unicode replacement chars in raw fields (strict UTF-8 read),test,S1,0,0,true
+country distribution unchanged (raw vs country_clean),test,S1,0,0,true
+country_clean differs from stripped country_raw,test,S1,0,0,true
+missing flag == raw nulls: business_name,test,S1,0,0,true
+missing flag == raw nulls: business_address,test,S1,0,0,true
+missing flag == raw nulls: country,test,S1,0,0,true
+raw name non-null -> name_norm non-null,test,S1,0,0,true
+raw address non-null -> address_norm non-null,test,S1,0,0,true
+empty name_clean always flagged (name_clean_empty),test,S1,0,0,true
+empty address_clean always flagged (address_placeholder_only),test,S1,0,0,true
+tokens rejoin exactly to clean string,test,S1,0,0,true
+all digits of name_norm survive in name_clean (same order),test,S1,0,0,true
+deterministic: two rebuilds of 1% sample identical,test,S1,True,True,true
+deterministic: rebuild equals stored parquet (1% sample),test,S1,True,True,true
+row count unchanged,test,S2,4887273,4887273,true
+entity_id unique,test,S2,4887273,4887273,true
+raw ids missing from output,test,S2,0,0,true
+output ids not in raw,test,S2,0,0,true
+entity_id prefix matches source,test,S2,0,0,true
+row order identical to raw file (row i = raw row i),test,S2,True,True,true
+split/source columns constant,test,S2,1,1,true
+raw field preserved: business_name,test,S2,0,0,true
+raw field preserved: business_address,test,S2,0,0,true
+raw field preserved: country,test,S2,0,0,true
+no unicode replacement chars in raw fields (strict UTF-8 read),test,S2,0,0,true
+country distribution unchanged (raw vs country_clean),test,S2,0,0,true
+country_clean differs from stripped country_raw,test,S2,0,0,true
+missing flag == raw nulls: business_name,test,S2,0,0,true
+missing flag == raw nulls: business_address,test,S2,129408,129408,true
+missing flag == raw nulls: country,test,S2,0,0,true
+raw name non-null -> name_norm non-null,test,S2,0,0,true
+raw address non-null -> address_norm non-null,test,S2,0,0,true
+empty name_clean always flagged (name_clean_empty),test,S2,0,0,true
+empty address_clean always flagged (address_placeholder_only),test,S2,0,0,true
+tokens rejoin exactly to clean string,test,S2,0,0,true
+all digits of name_norm survive in name_clean (same order),test,S2,0,0,true
+deterministic: two rebuilds of 1% sample identical,test,S2,True,True,true
+deterministic: rebuild equals stored parquet (1% sample),test,S2,True,True,true
+row count unchanged,test,S3,5082316,5082316,true
+entity_id unique,test,S3,5082316,5082316,true
+raw ids missing from output,test,S3,0,0,true
+output ids not in raw,test,S3,0,0,true
+entity_id prefix matches source,test,S3,0,0,true
+row order identical to raw file (row i = raw row i),test,S3,True,True,true
+split/source columns constant,test,S3,1,1,true
+raw field preserved: business_name,test,S3,0,0,true
+raw field preserved: business_address,test,S3,0,0,true
+raw field preserved: country,test,S3,0,0,true
+no unicode replacement chars in raw fields (strict UTF-8 read),test,S3,0,0,true
+country distribution unchanged (raw vs country_clean),test,S3,0,0,true
+country_clean differs from stripped country_raw,test,S3,0,0,true
+missing flag == raw nulls: business_name,test,S3,0,0,true
+missing flag == raw nulls: business_address,test,S3,136098,136098,true
+missing flag == raw nulls: country,test,S3,0,0,true
+raw name non-null -> name_norm non-null,test,S3,0,0,true
+raw address non-null -> address_norm non-null,test,S3,0,0,true
+empty name_clean always flagged (name_clean_empty),test,S3,0,0,true
+empty address_clean always flagged (address_placeholder_only),test,S3,0,0,true
+tokens rejoin exactly to clean string,test,S3,0,0,true
+all digits of name_norm survive in name_clean (same order),test,S3,0,0,true
+deterministic: two rebuilds of 1% sample identical,test,S3,True,True,true
+deterministic: rebuild equals stored parquet (1% sample),test,S3,True,True,true
+GT row count unchanged,train,GT,2206821,2206821,true
+GT raw id lists preserved,train,GT,0,0,true
+GT S1 ids all present in processed train S1,train,GT,0,0,true
+GT matched ids all present in processed train S2/S3,train,GT,0,0,true
+GT pair count (raw ids = parsed ids),train,GT,7638365,7638365,true

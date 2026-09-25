@@ -1,0 +1,5 @@
+country,singleton,s1_entities,pct_with_same_name_record,pct_with_decoy,median_decoys_when_any,exact_name_precision,exact_name_recall
+India,False,41777,70.24,41.25,7.0,0.153,0.158
+India,True,2484,40.86,40.86,7.0,0.0,
+US,False,62287,74.14,35.53,6.0,0.067,0.257
+US,True,3772,35.23,35.23,6.0,0.0,

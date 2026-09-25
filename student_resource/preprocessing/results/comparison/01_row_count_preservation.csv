@@ -1,0 +1,7 @@
+split,source,raw_rows,processed_rows,raw_columns,processed_columns,raw_fields_kept_as_string,raw_tsv_mb,parquet_mb,rows_equal
+train,S1,2206821,2206821,4,55,true,210.1,355.8,true
+train,S2,5034616,5034616,4,55,true,489.3,860.3,true
+train,S3,5285603,5285603,4,55,true,503.7,887.6,true
+test,S1,1732544,1732544,4,55,true,175.0,286.9,true
+test,S2,4887273,4887273,4,55,true,509.5,867.1,true
+test,S3,5082316,5082316,4,55,true,506.0,873.1,true

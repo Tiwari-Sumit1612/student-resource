@@ -1,0 +1,7 @@
+split,source,records,name_null_raw,address_null_raw,country_null_raw,name_norm_null,name_clean_null,name_base_null,address_norm_null,address_clean_null,address_placeholder_only,country_clean_null
+train,S1,2206821,0,0,0,0,0,8,0,0,0,0
+train,S2,5034616,0,168967,0,0,0,40,168967,168967,0,0
+train,S3,5285603,0,175916,0,0,0,182,175916,175916,0,0
+test,S1,1732544,0,0,0,0,0,4,0,0,0,0
+test,S2,4887273,0,129408,0,0,0,342,129408,129408,0,0
+test,S3,5082316,0,136098,0,0,0,569,136098,136098,0,0

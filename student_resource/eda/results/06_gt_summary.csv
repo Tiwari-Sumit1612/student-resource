@@ -1,0 +1,12 @@
+metric,value
+S1 entities in GT,2206821
+total matched records (pairs),7638365
+pairs to S2,3693619
+pairs to S3,3944746
+singletons (0 matches),123247
+exactly 1 match,119157
+>=2 matches,1964417
+mean matches / S1,3.461
+median matches / S1,3.0
+max matches / S1,11
+duplicate ids inside a list,0

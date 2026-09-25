@@ -1,0 +1,7 @@
+split,source,file,size_mb,rows,unique_ids,wrong_id_prefix,null_name,null_address,null_country,blank_name,blank_address,duplicate_ids,pct_null_address
+train,S1,train_source1.tsv,210.1,2206821,2206821,0,0,0,0,0,0,0,0.0
+train,S2,train_source2.tsv,489.3,5034616,5034616,0,0,168967,0,0,0,0,3.36
+train,S3,train_source3.tsv,503.7,5285603,5285603,0,0,175916,0,0,0,0,3.33
+test,S1,test_source1.tsv,175.0,1732544,1732544,0,0,0,0,0,0,0,0.0
+test,S2,test_source2.tsv,509.5,4887273,4887273,0,0,129408,0,0,0,0,2.65
+test,S3,test_source3.tsv,506.0,5082316,5082316,0,0,136098,0,0,0,0,2.68

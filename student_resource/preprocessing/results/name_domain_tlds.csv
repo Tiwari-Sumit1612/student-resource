@@ -1,0 +1,10 @@
+split,source,tld,records
+test,S1,co,2
+test,S2,com,155978
+test,S2,co,3
+test,S3,com,163932
+test,S3,co,8
+test,S3,io,1
+train,S2,com,201187
+train,S3,com,210837
+train,S3,in,1

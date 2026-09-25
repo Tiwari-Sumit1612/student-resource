@@ -1,0 +1,67 @@
+﻿2026-09-25 04:24:43,978 INFO START hash raw files (before)
+2026-09-25 04:24:46,978 INFO DONE  hash raw files (before) (3.0s, rss 0.04 GB)
+2026-09-25 04:24:46,978 INFO START process train S1
+2026-09-25 04:25:06,941 INFO DONE  process train S1 (20.0s, rss 1.08 GB)
+2026-09-25 04:25:06,941 INFO START process train S2
+2026-09-25 04:26:44,808 INFO DONE  process train S2 (97.9s, rss 1.36 GB)
+2026-09-25 04:26:44,808 INFO START process train S3
+2026-09-25 04:28:46,146 INFO DONE  process train S3 (121.3s, rss 1.43 GB)
+2026-09-25 04:28:46,147 INFO START process test S1
+2026-09-25 04:29:12,965 INFO DONE  process test S1 (26.8s, rss 1.62 GB)
+2026-09-25 04:29:12,965 INFO START process test S2
+2026-09-25 04:30:12,560 INFO DONE  process test S2 (59.6s, rss 1.39 GB)
+2026-09-25 04:30:12,560 INFO START process test S3
+2026-09-25 04:30:57,370 INFO DONE  process test S3 (44.8s, rss 1.49 GB)
+2026-09-25 04:30:57,370 INFO START process ground truth
+2026-09-25 04:30:59,049 INFO DONE  process ground truth (1.7s, rss 1.30 GB)
+2026-09-25 04:30:59,065 INFO START fingerprint outputs
+2026-09-25 04:31:11,231 INFO DONE  fingerprint outputs (12.2s, rss 3.12 GB)
+2026-09-25 04:31:11,257 INFO START validate
+2026-09-25 04:32:03,606 INFO DONE  validate (52.3s, rss 1.79 GB)
+2026-09-25 04:32:03,631 INFO START measure
+2026-09-25 04:32:03,631 INFO  measure: preprocessing summary
+2026-09-25 04:32:07,794 INFO   wrote preprocessing_summary.csv (6 rows)
+2026-09-25 04:32:07,794 INFO  measure: distributions
+2026-09-25 04:32:08,266 INFO   wrote country_values.csv (15 rows)
+2026-09-25 04:32:20,984 INFO   wrote missing_values.csv (6 rows)
+2026-09-25 04:32:21,502 INFO   wrote name_script_distribution.csv (93 rows)
+2026-09-25 04:32:21,993 INFO   wrote address_script_distribution.csv (78 rows)
+2026-09-25 04:32:23,227 INFO   wrote legal_forms.csv (221 rows)
+2026-09-25 04:32:23,308 INFO   wrote name_domain_tlds.csv (9 rows)
+2026-09-25 04:32:24,438 INFO   wrote postal_code_candidates.csv (15 rows)
+2026-09-25 04:32:24,925 INFO   wrote token_count_distribution.csv (331 rows)
+2026-09-25 04:32:24,925 INFO  measure: source comparison
+2026-09-25 04:33:03,088 INFO   wrote source_comparison.csv (6 rows)
+2026-09-25 04:33:03,097 INFO   wrote source_comparison_by_country.csv (15 rows)
+2026-09-25 04:33:03,097 INFO  measure: uniqueness by source
+2026-09-25 04:33:44,872 INFO   wrote uniqueness_by_source.csv (6 rows)
+2026-09-25 04:33:44,872 INFO  measure: normalization effects
+2026-09-25 04:33:51,267 INFO   effects train S1 name done
+2026-09-25 04:33:59,802 INFO   effects train S1 address done
+2026-09-25 04:34:15,901 INFO   effects train S2 name done
+2026-09-25 04:34:36,034 INFO   effects train S2 address done
+2026-09-25 04:34:51,071 INFO   effects train S3 name done
+2026-09-25 04:35:32,594 INFO   effects train S3 address done
+2026-09-25 04:35:37,265 INFO   effects test S1 name done
+2026-09-25 04:35:42,712 INFO   effects test S1 address done
+2026-09-25 04:35:57,636 INFO   effects test S2 name done
+2026-09-25 04:36:19,965 INFO   effects test S2 address done
+2026-09-25 04:36:35,285 INFO   effects test S3 name done
+2026-09-25 04:37:07,917 INFO   effects test S3 address done
+2026-09-25 04:37:08,058 INFO   wrote normalization_effects.csv (84 rows)
+2026-09-25 04:37:08,074 INFO   wrote collision_examples.csv (163 rows)
+2026-09-25 04:37:08,074 INFO  measure: S1 key collisions
+2026-09-25 04:37:51,238 INFO   wrote s1_key_collisions.csv (20 rows)
+2026-09-25 04:37:51,238 INFO  measure: GT collision purity (validation only)
+2026-09-25 04:38:55,670 INFO   wrote gt_s2s3_collision_purity.csv (9 rows)
+2026-09-25 04:38:55,670 INFO  measure: GT representation agreement (validation only)
+2026-09-25 04:39:01,042 INFO   wrote gt_representation_agreement.csv (12 rows)
+2026-09-25 04:39:01,052 INFO  measure: remaining noise
+2026-09-25 04:39:20,142 INFO   wrote remaining_noise.csv (17 rows)
+2026-09-25 04:39:20,155 INFO   wrote remaining_noise_examples.csv (92 rows)
+2026-09-25 04:39:20,158 INFO  measure: representation examples
+2026-09-25 04:39:26,971 INFO   wrote representation_examples.csv (45 rows)
+2026-09-25 04:39:26,985 INFO DONE  measure (443.3s, rss 6.84 GB)
+2026-09-25 04:39:26,987 INFO START hash raw files (after)
+2026-09-25 04:39:29,910 INFO DONE  hash raw files (after) (2.9s, rss 6.05 GB)
+2026-09-25 04:39:30,123 INFO peak RSS 10.95 GB | total 886s | raw unchanged: True | failed checks: 0

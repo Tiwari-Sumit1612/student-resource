@@ -1,0 +1,28 @@
+# --- Large data (2.5 GB raw + 4.2 GB processed) — too big for GitHub (100 MB file limit) ---
+student_resource/dataset/
+student_resource/processed/
+*.tsv
+*.parquet
+*.parquet.tmp
+
+# --- Python environment & caches ---
+student_resource/.venv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Run logs (machine-specific) ---
+student_resource/preprocessing/results/run.log
+
+# --- OS / archive junk ---
+__MACOSX/
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# --- Editor ---
+.vscode/
+.idea/

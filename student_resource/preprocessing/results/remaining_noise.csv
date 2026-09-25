@@ -1,0 +1,18 @@
+pattern,pct_train_S1,pct_train_S2,pct_train_S3,pct_test_S1,pct_test_S2,pct_test_S3
+"name: letter-digit mixed token (typo such as hea1th, or real e.g. 3m)",0.028,2.782,2.847,0.072,2.201,2.294
+name: non-Latin script (untransliterated),0.0,9.422,5.269,0.0,11.184,6.309
+name: whole name is a domain (words concatenated),0.0,3.457,3.437,0.0,2.761,2.787
+name: legal form first token (reordered),0.027,3.862,3.974,0.034,4.454,4.656
+"name: very long token (>= 18 chars, concatenation)",0.108,1.477,1.448,0.106,1.139,1.135
+"name: honorific / prefix token (m s, shri, sri, the, dr)",0.108,3.904,4.353,0.102,4.161,4.683
+name: repeated token,0.429,2.743,2.931,0.407,2.268,2.452
+name: '&' present (vs 'and'),5.071,4.153,4.104,5.017,4.268,4.194
+name: 'and' present,2.596,2.348,2.312,1.644,1.529,1.522
+address: abbreviated street type (st rd ave dr ln blvd r),2.799,26.502,25.051,2.976,22.829,21.679
+address: full street type (street road avenue drive lane boulevard rue),58.957,30.512,29.569,56.173,32.029,30.11
+address: non-Latin script,0.0,9.485,9.001,0.0,11.265,10.831
+address: US state 2-letter code as a token,51.823,50.068,2.559,33.056,32.266,1.341
+address: zero-padded number,1.281,5.601,5.287,1.488,5.461,5.139
+address: 'null'/'none'/'n a' token inside a segment,0.006,0.006,0.006,0.006,0.006,0.007
+address: letter-digit mixed token,16.885,15.468,14.7,16.755,15.81,14.522
+address: single segment only,0.0,0.0,0.0,0.0,0.004,0.003

@@ -1,0 +1,21 @@
+split,source,key,records,distinct_keys,colliding_keys,records_in_collisions,pct_records_in_collisions,max_group
+train,S1,name_raw + address_raw,2206821,2206821,0,0,0.0,1
+train,S1,name_norm + address_norm,2206821,2206821,0,0,0.0,1
+train,S1,name_clean + address_clean,2206821,2206821,0,0,0.0,1
+train,S1,folded name_clean + folded address_clean,2206821,2206821,0,0,0.0,1
+train,S1,name_base + address_clean,2206821,2206817,4,8,0.0004,2
+train,S1,sorted name_tokens + sorted address_tokens,2206821,2206821,0,0,0.0,1
+train,S1,name_raw only,2206821,1539229,177793,845385,38.3078,253
+train,S1,name_clean only,2206821,1517547,181533,870807,39.4598,253
+train,S1,name_base only,2206821,1307679,205727,1104869,50.0661,575
+train,S1,address_clean only,2206821,2130097,40580,117304,5.3155,14
+test,S1,name_raw + address_raw,1732544,1732544,0,0,0.0,1
+test,S1,name_norm + address_norm,1732544,1732544,0,0,0.0,1
+test,S1,name_clean + address_clean,1732544,1732543,1,2,0.0001,2
+test,S1,folded name_clean + folded address_clean,1732544,1732543,1,2,0.0001,2
+test,S1,name_base + address_clean,1732544,1732513,30,61,0.0035,3
+test,S1,sorted name_tokens + sorted address_tokens,1732544,1732541,3,6,0.0003,2
+test,S1,name_raw only,1732544,1238867,129955,623632,35.9952,205
+test,S1,name_clean only,1732544,1227654,132154,637044,36.7693,205
+test,S1,name_base only,1732544,1068219,150896,815221,47.0534,516
+test,S1,address_clean only,1732544,1673789,34350,93105,5.3739,101

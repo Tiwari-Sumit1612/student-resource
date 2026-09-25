@@ -1,0 +1,7 @@
+# Python 3.12.10
+polars==1.44.2
+psutil==7.2.2
+# optional, only for reading outputs / notebooks
+pyarrow==25.0.1
+duckdb==1.5.5
+pandas==3.0.6
