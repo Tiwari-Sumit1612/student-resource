@@ -193,11 +193,112 @@ def region_eval() -> dict:
     return {"coverage": cov, "agree": agree, "decoy": dec}
 
 
+# =========================================================================== step 3: name_latin
+
+NON_LATIN = ~pl.col("name_script").is_in(["Latin", "None"])
+
+
+def _itrans(text: str, script: str) -> str:
+    from indic_transliteration import sanscript
+    return sanscript.transliterate(text, getattr(sanscript, script.upper()), sanscript.ITRANS)
+
+
+def _anyascii(text: str, script: str) -> str:
+    from anyascii import anyascii
+    return anyascii(text)
+
+
+def _ascii_post(s: str) -> str | None:
+    """Shared post-processing for both candidates: lowercase, drop accent marks, keep [a-z0-9 &]."""
+    import re
+    import unicodedata
+    s = "".join(ch for ch in unicodedata.normalize("NFD", s.lower()) if not unicodedata.combining(ch))
+    s = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 &]", "", s)).strip()
+    return s or None
+
+
+def latin_eval() -> pl.DataFrame:
+    from rapidfuzz import fuzz, process
+    from rapidfuzz.distance import JaroWinkler
+    pairs = _sample_pairs(10)
+    tp = _pair_frame(pairs, ["country_clean", "name_clean", "name_script"], lambda lf: lf)
+    tp = tp.filter(~pl.col("b_name_script").is_in(["Latin", "None"]))
+    tp = tp.with_columns(script=pl.col("b_name_script").str.replace("Latin+", "", literal=True))
+    names, scripts = tp["b_name_clean"].to_list(), tp["script"].to_list()
+    has_stored = "name_latin" in _proc("train", "S2").collect_schema().names()
+    cands = {"raw (no romanisation)": names,
+             "anyascii": [_ascii_post(_anyascii(n, s)) for n, s in zip(names, scripts)],
+             "itrans": [_ascii_post(_itrans(n, s)) for n, s in zip(names, scripts)]}
+    if has_stored:  # after the rebuild: evaluate the stored column itself
+        stored = _pair_frame(pairs, ["name_latin"], lambda lf: lf).select("s1_id", "m_id", "b_name_latin")
+        cands["stored name_latin"] = tp.join(stored, on=["s1_id", "m_id"], how="left")["b_name_latin"].to_list()
+    s1 = tp["a_name_clean"].to_list()
+    rows = []
+    for method, cand in cands.items():
+        c = [x or "" for x in cand]
+        ratio = process.cpdist(s1, c, scorer=fuzz.ratio, workers=-1)
+        jw = process.cpdist(s1, c, scorer=JaroWinkler.normalized_similarity, workers=-1)
+        d = tp.select("script").with_columns(ratio=pl.Series(ratio), jw=pl.Series(jw))
+        agg = lambda g: g.agg(pairs=pl.len(), median_ratio=pl.col("ratio").median().round(1),
+                              median_jaro_winkler=pl.col("jw").median().round(3),
+                              pct_jw_ge_0_8=((pl.col("jw") >= 0.8).mean() * 100).round(2))
+        rows.append(pl.concat([agg(d.group_by("script")), agg(d.select(pl.lit("ALL").alias("script"), "ratio", "jw").group_by("script"))])
+                    .with_columns(method=pl.lit(method)))
+    res = pl.concat(rows).select("method", "script", "pairs", "median_ratio", "median_jaro_winkler", "pct_jw_ge_0_8")
+    base = res.filter(pl.col("method") == "raw (no romanisation)").select("script", base_ratio="median_ratio")
+    res = res.join(base, on="script").with_columns(median_ratio_lift=(pl.col("median_ratio") - pl.col("base_ratio")).round(1)).drop("base_ratio")
+    order = {"ALL": 0}
+    res = res.sort(pl.col("script").replace_strict(order, default=1, return_dtype=pl.Int8), "script", "method")
+    _save(res, "03_name_latin_similarity")
+    ex = tp.with_columns(anyascii=pl.Series(cands["anyascii"]), itrans=pl.Series(cands["itrans"])) \
+           .with_columns(h=pl.col("m_id").hash(SEED)).sort("h").group_by("script", maintain_order=True).head(2) \
+           .select("script", s1_name="a_name_clean", match_name="b_name_clean", anyascii="anyascii", itrans="itrans")
+    _save(ex, "03_name_latin_examples")
+    return res
+
+
+# =========================================================================== step 4: legal-form coverage (label-free)
+
+def legal_coverage(tag: str = "") -> pl.DataFrame:
+    """name_has_legal_form rate by name_script on India S2/S3 (train + test). No ground truth."""
+    lfs = [_proc(sp, s).filter(pl.col("country_clean") == "India") for sp in C.SPLITS for s in ("S2", "S3")]
+    lf = pl.concat(lfs).with_columns(
+        legal_now=T.legal_forms("name_tokens").list.len() > 0,        # current lexicon (pipeline expression)
+        script=pl.col("name_script").str.replace("Latin+", "", literal=True))
+    df = _c(lf.group_by("script").agg(
+        records=pl.len(),
+        pct_has_legal_form_stored=(pl.col("name_has_legal_form").mean() * 100).round(2),
+        pct_has_legal_form_current_lexicon=(pl.col("legal_now").mean() * 100).round(2),
+        pct_has_llp_stored=(pl.col("name_legal_forms").list.contains("llp").mean() * 100).round(2),
+        pct_has_llp_current_lexicon=(T.legal_forms("name_tokens").list.contains("llp").mean() * 100).round(2),
+    )).sort("records", descending=True)
+    _save(df, f"04_legal_form_coverage_by_script{tag}")
+    return df
+
+
+def legal_gap_tokens(k: int = 12) -> pl.DataFrame:
+    """Most frequent unrecognised tokens per non-Latin script (to read off missing lexicon entries)."""
+    from anyascii import anyascii
+    lfs = [_proc(sp, s).filter(pl.col("country_clean") == "India") for sp in C.SPLITS for s in ("S2", "S3")]
+    lf = (pl.concat(lfs).filter(~pl.col("name_script").is_in(["Latin", "None"]))
+          .select(script=pl.col("name_script").str.replace("Latin+", "", literal=True), tok="name_tokens")
+          .explode("tok").filter(pl.col("tok").str.contains(C.NON_LATIN_LETTER) & ~T.is_legal_token(pl.col("tok"))))
+    df = _c(lf.group_by("script", "tok").len().sort("len", descending=True).group_by("script", maintain_order=True).head(k))
+    df = df.with_columns(romanised=pl.col("tok").map_elements(anyascii, return_dtype=pl.String))
+    _save(df.sort("script", "len", descending=[False, True]), "04_legal_form_gap_tokens")
+    return df
+
+
+def legal_eval() -> None:
+    legal_coverage()
+    legal_gap_tokens()
+
+
 # =========================================================================== main
 
 def main(argv):
     what = argv[1] if len(argv) > 1 else "all"
-    steps = {"rows": row_order_leakage, "region": region_eval}
+    steps = {"rows": row_order_leakage, "region": region_eval, "latin": latin_eval, "legal": legal_eval}
     for k, fn in steps.items():
         if what in (k, "all"):
             fn()

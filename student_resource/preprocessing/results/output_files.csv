@@ -1,8 +1,8 @@
 split,source,output,rows_out,size_mb,raw_size_mb
-train,S1,train_source1.parquet,2206821,355.8,210.1
-train,S2,train_source2.parquet,5034616,860.3,489.3
-train,S3,train_source3.parquet,5285603,887.6,503.7
-test,S1,test_source1.parquet,1732544,286.9,175.0
-test,S2,test_source2.parquet,4887273,867.1,509.5
-test,S3,test_source3.parquet,5082316,873.1,506.0
+train,S1,train_source1.parquet,2206821,357.4,210.1
+train,S2,train_source2.parquet,5034616,868.3,489.3
+train,S3,train_source3.parquet,5285603,894.7,503.7
+test,S1,test_source1.parquet,1732544,288.1,175.0
+test,S2,test_source2.parquet,4887273,875.8,509.5
+test,S3,test_source3.parquet,5082316,880.7,506.0
 train,GT,train_ground_truth.parquet,2206821,102.6,127.0

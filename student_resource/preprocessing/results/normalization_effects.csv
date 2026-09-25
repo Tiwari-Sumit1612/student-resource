@@ -26,7 +26,7 @@ train,S2,name,2,lowercase,lower-case,5034616,5034616,4287470,4289038,85.191,0,10
 train,S2,name,3,whitespace,"collapse/strip whitespace  (= *_norm, stored)",5034616,5034616,4192965,554392,11.012,0,87905,366495,167169,619436,94505,4.749
 train,S2,name,4,punctuation,"apostrophes joined, dotted acronyms joined, punctuation->space  (= *_clean, stored)",5034616,5034616,4017017,1604176,31.863,0,140196,586755,258681,914912,175948,8.746
 train,S2,name,5,diacritic_fold,strip accents on Latin letters (NOT stored; on-demand transform),5034616,5034616,3936904,290263,5.765,0,76179,404332,300087,1045476,80113,10.566
-train,S2,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",5034616,5034576,3298543,3237628,64.307,40,418813,1900697,511293,2158607,638361,25.067
+train,S2,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",5034616,5034576,3292288,3248297,64.519,40,421480,1917937,513960,2175847,644616,25.209
 train,S3,address,0,raw,original value,5285603,5109687,4632764,0,0.0,0,0,0,0,0,0,0.0
 train,S3,address,1,unicode,"mojibake repair, NFKC, drop zero-width/format chars, control->space, unify quotes/dashes",5285603,5109687,4632764,1437,0.028,0,0,0,0,0,0,0.0
 train,S3,address,2,lowercase,lower-case,5285603,5109687,4632184,5109592,99.998,0,580,1416,580,1416,580,0.013
@@ -40,7 +40,7 @@ train,S3,name,2,lowercase,lower-case,5285603,5285603,4579083,4711328,89.135,0,63
 train,S3,name,3,whitespace,"collapse/strip whitespace  (= *_norm, stored)",5285603,5285603,4473473,575616,10.89,0,95730,412071,141505,557784,105610,3.83
 train,S3,name,4,punctuation,"apostrophes joined, dotted acronyms joined, punctuation->space  (= *_clean, stored)",5285603,5285603,4273219,1740560,32.93,0,156736,694177,252559,955959,200254,8.135
 train,S3,name,5,diacritic_fold,strip accents on Latin letters (NOT stored; on-demand transform),5285603,5285603,4180403,328213,6.21,0,87057,478903,301168,1124704,92816,10.13
-train,S3,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",5285603,5285421,3547497,3321398,62.839,182,415149,1888406,507193,2136636,632906,23.736
+train,S3,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",5285603,5285421,3544141,3327443,62.953,182,417079,1896713,509123,2144943,636262,23.808
 test,S1,address,0,raw,original value,1732544,1732544,1677483,0,0.0,0,0,0,0,0,0,0.0
 test,S1,address,1,unicode,"mojibake repair, NFKC, drop zero-width/format chars, control->space, unify quotes/dashes",1732544,1732544,1677483,2819,0.163,0,0,0,0,0,0,0.0
 test,S1,address,2,lowercase,lower-case,1732544,1732544,1674549,1732544,100.0,0,2814,7401,2814,7401,2934,0.175
@@ -68,7 +68,7 @@ test,S2,name,2,lowercase,lower-case,4887273,4887273,4207077,4115494,84.208,0,948
 test,S2,name,3,whitespace,"collapse/strip whitespace  (= *_norm, stored)",4887273,4887273,4129352,500237,10.236,0,72480,283111,145665,502563,77725,4.215
 test,S2,name,4,punctuation,"apostrophes joined, dotted acronyms joined, punctuation->space  (= *_clean, stored)",4887273,4887273,3995283,1359143,27.81,0,110932,433194,219969,733436,134069,7.324
 test,S2,name,5,diacritic_fold,strip accents on Latin letters (NOT stored; on-demand transform),4887273,4887273,3917930,381551,7.807,0,72183,331178,260386,862485,77353,9.119
-test,S2,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",4887273,4886931,3286133,3402166,69.613,342,410709,1801042,483840,1995421,631797,23.774
+test,S2,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",4887273,4886931,3277798,3416570,69.907,342,414058,1822482,487189,2016861,640132,23.967
 test,S3,address,0,raw,original value,5082316,4946218,4456435,0,0.0,0,0,0,0,0,0,0.0
 test,S3,address,1,unicode,"mojibake repair, NFKC, drop zero-width/format chars, control->space, unify quotes/dashes",5082316,4946218,4456429,18819,0.38,0,6,17,6,17,6,0.0
 test,S3,address,2,lowercase,lower-case,5082316,4946218,4450850,4946109,99.998,0,5503,14204,5509,14221,5579,0.125
@@ -82,4 +82,4 @@ test,S3,name,2,lowercase,lower-case,5082316,5082316,4446091,4520085,88.938,0,656
 test,S3,name,3,whitespace,"collapse/strip whitespace  (= *_norm, stored)",5082316,5082316,4357464,519596,10.224,0,80258,333210,129317,480602,88627,3.637
 test,S3,name,4,punctuation,"apostrophes joined, dotted acronyms joined, punctuation->space  (= *_clean, stored)",5082316,5082316,4201667,1462537,28.777,0,126067,535724,217793,790321,155797,7.082
 test,S3,name,5,diacritic_fold,strip accents on Latin letters (NOT stored; on-demand transform),5082316,5082316,4112787,416873,8.202,0,82067,399488,264203,949803,88880,9.048
-test,S3,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",5082316,5081747,3475846,3469198,68.26,569,411992,1798962,484745,1987222,636941,23.134
+test,S3,name,6,legal_removed,"drop legal-form tokens  (= name_base, stored as extra representation)",5082316,5081747,3471410,3477218,68.418,569,414402,1809671,487154,1997929,641377,23.232

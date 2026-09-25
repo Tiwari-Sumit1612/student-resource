@@ -21,6 +21,11 @@ empty name_clean always flagged (name_clean_empty),train,S1,0,0,true
 empty address_clean always flagged (address_placeholder_only),train,S1,0,0,true
 tokens rejoin exactly to clean string,train,S1,0,0,true
 all digits of name_norm survive in name_clean (same order),train,S1,0,0,true
+[new] address_region_found == address_region is not null,train,S1,0,0,true
+[new] address_region prefix matches country_clean,train,S1,0,0,true
+[new] address_region only when address_clean exists,train,S1,0,0,true
+[new] name_latin null for Latin / letterless names,train,S1,0,0,true
+[new] name_latin is lowercase ASCII [a-z0-9 &],train,S1,0,0,true
 deterministic: two rebuilds of 1% sample identical,train,S1,True,True,true
 deterministic: rebuild equals stored parquet (1% sample),train,S1,True,True,true
 row count unchanged,train,S2,5034616,5034616,true
@@ -45,6 +50,11 @@ empty name_clean always flagged (name_clean_empty),train,S2,0,0,true
 empty address_clean always flagged (address_placeholder_only),train,S2,0,0,true
 tokens rejoin exactly to clean string,train,S2,0,0,true
 all digits of name_norm survive in name_clean (same order),train,S2,0,0,true
+[new] address_region_found == address_region is not null,train,S2,0,0,true
+[new] address_region prefix matches country_clean,train,S2,0,0,true
+[new] address_region only when address_clean exists,train,S2,0,0,true
+[new] name_latin null for Latin / letterless names,train,S2,0,0,true
+[new] name_latin is lowercase ASCII [a-z0-9 &],train,S2,0,0,true
 deterministic: two rebuilds of 1% sample identical,train,S2,True,True,true
 deterministic: rebuild equals stored parquet (1% sample),train,S2,True,True,true
 row count unchanged,train,S3,5285603,5285603,true
@@ -69,6 +79,11 @@ empty name_clean always flagged (name_clean_empty),train,S3,0,0,true
 empty address_clean always flagged (address_placeholder_only),train,S3,0,0,true
 tokens rejoin exactly to clean string,train,S3,0,0,true
 all digits of name_norm survive in name_clean (same order),train,S3,0,0,true
+[new] address_region_found == address_region is not null,train,S3,0,0,true
+[new] address_region prefix matches country_clean,train,S3,0,0,true
+[new] address_region only when address_clean exists,train,S3,0,0,true
+[new] name_latin null for Latin / letterless names,train,S3,0,0,true
+[new] name_latin is lowercase ASCII [a-z0-9 &],train,S3,0,0,true
 deterministic: two rebuilds of 1% sample identical,train,S3,True,True,true
 deterministic: rebuild equals stored parquet (1% sample),train,S3,True,True,true
 row count unchanged,test,S1,1732544,1732544,true
@@ -93,6 +108,11 @@ empty name_clean always flagged (name_clean_empty),test,S1,0,0,true
 empty address_clean always flagged (address_placeholder_only),test,S1,0,0,true
 tokens rejoin exactly to clean string,test,S1,0,0,true
 all digits of name_norm survive in name_clean (same order),test,S1,0,0,true
+[new] address_region_found == address_region is not null,test,S1,0,0,true
+[new] address_region prefix matches country_clean,test,S1,0,0,true
+[new] address_region only when address_clean exists,test,S1,0,0,true
+[new] name_latin null for Latin / letterless names,test,S1,0,0,true
+[new] name_latin is lowercase ASCII [a-z0-9 &],test,S1,0,0,true
 deterministic: two rebuilds of 1% sample identical,test,S1,True,True,true
 deterministic: rebuild equals stored parquet (1% sample),test,S1,True,True,true
 row count unchanged,test,S2,4887273,4887273,true
@@ -117,6 +137,11 @@ empty name_clean always flagged (name_clean_empty),test,S2,0,0,true
 empty address_clean always flagged (address_placeholder_only),test,S2,0,0,true
 tokens rejoin exactly to clean string,test,S2,0,0,true
 all digits of name_norm survive in name_clean (same order),test,S2,0,0,true
+[new] address_region_found == address_region is not null,test,S2,0,0,true
+[new] address_region prefix matches country_clean,test,S2,0,0,true
+[new] address_region only when address_clean exists,test,S2,0,0,true
+[new] name_latin null for Latin / letterless names,test,S2,0,0,true
+[new] name_latin is lowercase ASCII [a-z0-9 &],test,S2,0,0,true
 deterministic: two rebuilds of 1% sample identical,test,S2,True,True,true
 deterministic: rebuild equals stored parquet (1% sample),test,S2,True,True,true
 row count unchanged,test,S3,5082316,5082316,true
@@ -141,6 +166,11 @@ empty name_clean always flagged (name_clean_empty),test,S3,0,0,true
 empty address_clean always flagged (address_placeholder_only),test,S3,0,0,true
 tokens rejoin exactly to clean string,test,S3,0,0,true
 all digits of name_norm survive in name_clean (same order),test,S3,0,0,true
+[new] address_region_found == address_region is not null,test,S3,0,0,true
+[new] address_region prefix matches country_clean,test,S3,0,0,true
+[new] address_region only when address_clean exists,test,S3,0,0,true
+[new] name_latin null for Latin / letterless names,test,S3,0,0,true
+[new] name_latin is lowercase ASCII [a-z0-9 &],test,S3,0,0,true
 deterministic: two rebuilds of 1% sample identical,test,S3,True,True,true
 deterministic: rebuild equals stored parquet (1% sample),test,S3,True,True,true
 GT row count unchanged,train,GT,2206821,2206821,true

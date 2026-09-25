@@ -4,8 +4,8 @@ name: unicode,name: lowercase,35540,82018,46478,0,6.082
 name: lowercase,name: norm,82018,120221,38203,0,4.999
 name: norm,name: clean,120221,173073,52852,0,6.916
 name: clean,name: fold,173073,203256,30183,0,3.95
-name: clean,name: base,173073,348261,175190,2,22.924
-name: base,name: base+fold,348261,378932,30671,0,4.013
+name: clean,name: base,173073,348276,175205,2,22.926
+name: base,name: base+fold,348276,378947,30671,0,4.013
 address: raw,address: unicode,16807,16807,0,0,0.0
 address: unicode,address: lowercase,16807,55274,38467,0,5.034
 address: lowercase,address: norm,55274,56552,1278,0,0.167

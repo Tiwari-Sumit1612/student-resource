@@ -1,0 +1,5 @@
+country,kind,pairs,pct_region_disagree
+India,same-name DECOY,136967,85.09
+India,same-name TRUE pair,23297,1.33
+US,same-name DECOY,869282,95.43
+US,same-name TRUE pair,58429,0.0

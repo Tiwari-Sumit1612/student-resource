@@ -32,6 +32,9 @@ Findings of the executed run: **`REPORT.md`**.
 | `preprocessing/measure.py` | effect/collision/source measurements → `results/*.csv` |
 | `preprocessing/REPORT.md` | findings of the executed run |
 | `preprocessing/notebooks/preprocessing_comparison.ipynb` | executed RAW vs PROCESSED evaluation (reuses `transforms`/`validate`; outputs in `results/comparison/`) |
+| `preprocessing/schema.py` | **data dictionary** (single source of column names; `from preprocessing.schema import COL`); `python -m preprocessing.schema` checks it against the Parquet files and writes `DATA_DICTIONARY.md` |
+| `preprocessing/audit_eval.py` | evaluation for `PREPROCESSING_AUDIT.md` §9 (row-order leakage, region / romanisation / legal-form checks); ground truth used for evaluation only; outputs in `results/audit/` |
+| `preprocessing/FROZEN_FINGERPRINTS.json` | frozen per-column content fingerprints of the current version (survives `--clean`) |
 | `processed/{split}_source{n}.parquet` | one file per raw source file, same rows, same `entity_id`s |
 | `processed/train_ground_truth.parquet` | GT with the id list parsed (format conversion only) |
 
@@ -54,6 +57,11 @@ raw ─unicode─▶ ─lowercase─▶ ─whitespace─▶ *_norm ─(address: 
 | punctuation | `o'reilly`→`oreilly`, `l.l.c.`→`llc`, `&` kept as its own token, other punctuation → space; digits and letters never removed | no stop-word, legal-form, abbreviation or number rewriting |
 
 ## Schema (one row per raw record)
+
+The authoritative, machine-checked list of all 58 stored columns is **`DATA_DICTIONARY.md`** (generated from
+`schema.py`). Added by the audit (appended after the original 55; no original column moved):
+`address_region` (ISO-3166-2-style region from whole address segments, per-country gazetteer),
+`address_region_found`, and `name_latin` (anyascii 0.3.3 romanisation of non-Latin names, null otherwise).
 
 **Identity / raw (unchanged):** `entity_id`, `split`, `source`, `business_name_raw`, `business_address_raw`, `country_raw`
 

@@ -23,12 +23,12 @@ India,S2,148080,name: fold,17.507
 India,S3,158150,name: fold,20.158
 US,S2,221472,name: fold,31.956
 US,S3,236508,name: fold,31.575
-India,S2,148080,name: base,40.854
-India,S3,158150,name: base,42.324
+India,S2,148080,name: base,40.855
+India,S3,158150,name: base,42.333
 US,S2,221472,name: base,50.44
 US,S3,236508,name: base,46.137
-India,S2,148080,name: base+fold,43.11
-India,S3,158150,name: base+fold,45.015
+India,S2,148080,name: base+fold,43.111
+India,S3,158150,name: base+fold,45.023
 US,S2,221472,name: base+fold,55.51
 US,S3,236508,name: base+fold,51.146
 India,S2,148080,address: raw,0.0

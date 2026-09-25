@@ -1,6 +1,10 @@
 # Python 3.12.10
 polars==1.44.2
 psutil==7.2.2
+anyascii==0.3.3              # name_latin romanisation (pinned: output must not drift between runs)
+# evaluation only (audit_eval.py), never imported by the pipeline
+indic-transliteration==2.3.82
+rapidfuzz==3.14.6
 # optional, only for reading outputs / notebooks
 pyarrow==25.0.1
 duckdb==1.5.5

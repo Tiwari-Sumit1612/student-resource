@@ -87,6 +87,23 @@ def checks_for_file(split: str, source: str) -> list[dict]:
     add("tokens rejoin exactly to clean string", 0, s["tokens_mismatch"])
     add("all digits of name_norm survive in name_clean (same order)", 0, s["name_digits_lost"])
 
+    # 6b. new auxiliary columns (audit section 9) - reported as extra checks, the original 149 are unchanged
+    n = _c(proc.select(
+        region_found_consistent=(pl.col("address_region_found") != pl.col("address_region").is_not_null()).sum(),
+        region_country_consistent=(pl.col("address_region").is_not_null()
+                                   & ~pl.col("address_region").str.starts_with(
+                                       pl.col("country_clean").replace_strict({"US": "US-", "India": "IN-", "France": "FR-"},
+                                                                               default="??", return_dtype=pl.String))).sum(),
+        region_without_address=(pl.col("address_region").is_not_null() & pl.col("address_clean").is_null()).sum(),
+        latin_on_latin_name=(pl.col("name_latin").is_not_null() & pl.col("name_script").is_in(["Latin", "None"])).sum(),
+        latin_not_ascii=(pl.col("name_latin").is_not_null() & ~pl.col("name_latin").str.contains(r"^[a-z0-9 &]+$")).sum(),
+    )).row(0, named=True)
+    add("[new] address_region_found == address_region is not null", 0, n["region_found_consistent"])
+    add("[new] address_region prefix matches country_clean", 0, n["region_country_consistent"])
+    add("[new] address_region only when address_clean exists", 0, n["region_without_address"])
+    add("[new] name_latin null for Latin / letterless names", 0, n["latin_on_latin_name"])
+    add("[new] name_latin is lowercase ASCII [a-z0-9 &]", 0, n["latin_not_ascii"])
+
     # 7. determinism: rebuild a 1% sample twice from the raw file and compare with the stored rows
     from .preprocess import COLUMN_ORDER, build
     sample = raw.filter(pl.col("entity_id").hash(C.SEED) % 100 == 0)

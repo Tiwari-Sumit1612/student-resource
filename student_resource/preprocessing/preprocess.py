@@ -182,6 +182,12 @@ def build(lf: pl.LazyFrame, split: str, source: str) -> pl.LazyFrame:
         address_n_tokens=pl.col("address_tokens").list.len().cast(pl.UInt16),
         address_n_segments=pl.col("address_segments").list.len().cast(pl.UInt16),
     )
+    # ---- auxiliary representations added by PREPROCESSING_AUDIT section 9 (appended; nothing above changes)
+    lf = lf.with_columns(
+        address_region=T.address_region("address_segments", "country_clean"),
+        name_latin=T.name_latin("name_clean", "name_script"),
+    )
+    lf = lf.with_columns(address_region_found=pl.col("address_region").is_not_null())
     return lf
 
 

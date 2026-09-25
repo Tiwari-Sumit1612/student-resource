@@ -22,7 +22,7 @@ train,S2,name,lowercase,85.191,106080,432058,2.602
 train,S2,name,whitespace,11.012,87905,366495,4.749
 train,S2,name,punctuation,31.863,140196,586755,8.746
 train,S2,name,diacritic_fold,5.765,76179,404332,10.566
-train,S2,name,legal_removed,64.307,418813,1900697,25.067
+train,S2,name,legal_removed,64.519,421480,1917937,25.209
 train,S3,address,unicode,0.028,0,0,0.0
 train,S3,address,lowercase,99.998,580,1416,0.013
 train,S3,address,whitespace,0.098,998,2482,0.034
@@ -34,7 +34,7 @@ train,S3,name,lowercase,89.135,63318,275781,1.559
 train,S3,name,whitespace,10.89,95730,412071,3.83
 train,S3,name,punctuation,32.93,156736,694177,8.135
 train,S3,name,diacritic_fold,6.21,87057,478903,10.13
-train,S3,name,legal_removed,62.839,415149,1888406,23.736
+train,S3,name,legal_removed,62.953,417079,1896713,23.808
 test,S1,address,unicode,0.163,0,0,0.0
 test,S1,address,lowercase,100.0,2814,7401,0.175
 test,S1,address,whitespace,0.047,8,162,0.175
@@ -58,7 +58,7 @@ test,S2,name,lowercase,84.208,94882,348732,2.412
 test,S2,name,whitespace,10.236,72480,283111,4.215
 test,S2,name,punctuation,27.81,110932,433194,7.324
 test,S2,name,diacritic_fold,7.807,72183,331178,9.119
-test,S2,name,legal_removed,69.613,410709,1801042,23.774
+test,S2,name,legal_removed,69.907,414058,1822482,23.967
 test,S3,address,unicode,0.38,6,17,0.0
 test,S3,address,lowercase,99.998,5503,14204,0.125
 test,S3,address,whitespace,0.066,668,1499,0.14
@@ -70,4 +70,4 @@ test,S3,name,lowercase,88.938,65679,257895,1.677
 test,S3,name,whitespace,10.224,80258,333210,3.637
 test,S3,name,punctuation,28.777,126067,535724,7.082
 test,S3,name,diacritic_fold,8.202,82067,399488,9.048
-test,S3,name,legal_removed,68.26,411992,1798962,23.134
+test,S3,name,legal_removed,68.418,414402,1809671,23.232

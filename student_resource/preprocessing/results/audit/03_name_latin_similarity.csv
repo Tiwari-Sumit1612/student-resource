@@ -1,0 +1,41 @@
+method,script,pairs,median_ratio,median_jaro_winkler,pct_jw_ge_0_8,median_ratio_lift
+anyascii,ALL,55194,77.6,0.846,69.97,67.8
+itrans,ALL,55194,72.7,0.822,58.31,62.9
+raw (no romanisation),ALL,55194,9.8,0.399,1.78,0.0
+stored name_latin,ALL,55194,77.6,0.846,69.97,67.8
+anyascii,Bengali,3536,75.0,0.839,67.17,65.2
+itrans,Bengali,3536,69.1,0.803,50.85,59.3
+raw (no romanisation),Bengali,3536,9.8,0.399,1.98,0.0
+stored name_latin,Bengali,3536,75.0,0.839,67.17,65.2
+anyascii,Devanagari,30907,78.7,0.853,73.14,68.7
+itrans,Devanagari,30907,73.0,0.824,60.42,63.0
+raw (no romanisation),Devanagari,30907,10.0,0.4,1.87,0.0
+stored name_latin,Devanagari,30907,78.7,0.853,73.14,68.7
+anyascii,Gujarati,3615,80.6,0.868,79.34,70.6
+itrans,Gujarati,3615,75.7,0.852,70.04,65.7
+raw (no romanisation),Gujarati,3615,10.0,0.4,1.52,0.0
+stored name_latin,Gujarati,3615,80.6,0.868,79.34,70.6
+anyascii,Gurmukhi,808,70.2,0.808,53.34,59.9
+itrans,Gurmukhi,808,63.2,0.727,27.35,52.9
+raw (no romanisation),Gurmukhi,808,10.3,0.402,2.48,0.0
+stored name_latin,Gurmukhi,808,70.2,0.808,53.34,59.9
+anyascii,Kannada,4452,79.4,0.86,77.22,69.9
+itrans,Kannada,4452,78.7,0.864,77.94,69.2
+raw (no romanisation),Kannada,4452,9.5,0.398,1.62,0.0
+stored name_latin,Kannada,4452,79.4,0.86,77.22,69.9
+anyascii,Malayalam,2367,69.0,0.803,50.99,59.8
+itrans,Malayalam,2367,66.7,0.771,41.02,57.5
+raw (no romanisation),Malayalam,2367,9.2,0.395,1.35,0.0
+stored name_latin,Malayalam,2367,69.0,0.803,50.99,59.8
+anyascii,Oriya,890,76.5,0.837,68.09,67.1
+itrans,Oriya,890,74.4,0.84,61.69,65.0
+raw (no romanisation),Oriya,890,9.4,0.397,1.57,0.0
+stored name_latin,Oriya,890,76.5,0.837,68.09,67.1
+anyascii,Tamil,4049,71.4,0.778,38.16,62.0
+itrans,Tamil,4049,58.3,0.641,11.34,48.9
+raw (no romanisation),Tamil,4049,9.4,0.397,1.61,0.0
+stored name_latin,Tamil,4049,71.4,0.778,38.16,62.0
+anyascii,Telugu,4570,79.2,0.855,77.48,69.7
+itrans,Telugu,4570,78.7,0.859,76.76,69.2
+raw (no romanisation),Telugu,4570,9.5,0.397,1.62,0.0
+stored name_latin,Telugu,4570,79.2,0.855,77.48,69.7

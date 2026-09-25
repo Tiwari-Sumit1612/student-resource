@@ -1,5 +1,5 @@
 src,pairing,consecutive_same_entity_pairs,median_row_gap,pct_gap_le_1,pct_gap_le_100
-S2,random,1774543,1084425.0,0.0001,0.0052
+S2,random,1774543,1085897.0,0.0,0.0055
 S2,same entity,1774543,1087819.0,0.0001,0.0055
-S3,random,2004201,1109029.0,0.0,0.0057
+S3,random,2004201,1108664.0,0.0,0.0058
 S3,same entity,2004201,1105592.0,0.0,0.0063

@@ -1,5 +1,5 @@
 {
-  "started": "2026-09-25 08:44:04",
+  "started": "2026-09-25 11:48:26",
   "python": "3.12.10",
   "polars": "1.44.2",
   "platform": "Windows-11-10.0.26100-SP0",
@@ -69,7 +69,10 @@
       "address_placeholder_only": 934064476412376,
       "address_has_zero_padded_number": 942191855914488,
       "address_has_landmark": 968636881770048,
-      "address_has_care_of": 949800711133752
+      "address_has_care_of": 949800711133752,
+      "address_region": 1241955438526753,
+      "name_latin": 1831297957754016,
+      "address_region_found": 1568135169823752
     },
     "train_source2.parquet": {
       "entity_id": 2517291469714328,
@@ -85,8 +88,8 @@
       "name_norm": 2518496621616888,
       "name_clean": 2518265237588771,
       "name_tokens": 2515953633961964,
-      "name_base": 2517180998946996,
-      "name_legal_forms": 891252530950921,
+      "name_base": 2517076659670109,
+      "name_legal_forms": 890964729800188,
       "name_domain": 4111457137825212,
       "name_numbers": 292106242850588,
       "name_script": 4741242418609771,
@@ -112,7 +115,7 @@
       "name_has_leading_junk": 2162289238299904,
       "name_has_repeated_whitespace": 2290312998707200,
       "name_has_encoding_artifact": 2130964795467832,
-      "name_has_legal_form": 3026971594495744,
+      "name_has_legal_form": 3030038188494472,
       "name_legal_at_start": 2186853895054360,
       "name_legal_only": 2130975430389376,
       "name_clean_empty": 2130963933176896,
@@ -126,7 +129,10 @@
       "address_placeholder_only": 2130963933176896,
       "address_has_zero_padded_number": 2280714374774680,
       "address_has_landmark": 2267186179710088,
-      "address_has_care_of": 2234403890335552
+      "address_has_care_of": 2234403890335552,
+      "address_region": 2869556764879704,
+      "name_latin": 4021632051356495,
+      "address_region_found": 3529062049255144
     },
     "train_source3.parquet": {
       "entity_id": 2642502573707521,
@@ -142,8 +148,8 @@
       "name_norm": 2643698066091268,
       "name_clean": 2644343657316730,
       "name_tokens": 2643238256045437,
-      "name_base": 2642638968432489,
-      "name_legal_forms": 927252824243149,
+      "name_base": 2642563628778049,
+      "name_legal_forms": 927089757605584,
       "name_domain": 4316702338560117,
       "name_numbers": 307861734070217,
       "name_script": 5060057707034294,
@@ -169,7 +175,7 @@
       "name_has_leading_junk": 2270025010584800,
       "name_has_repeated_whitespace": 2402646793693160,
       "name_has_encoding_artifact": 2237197594651280,
-      "name_has_legal_form": 3154525974223352,
+      "name_has_legal_form": 3156263490459392,
       "name_legal_at_start": 2297566008220016,
       "name_legal_only": 2237249619537752,
       "name_clean_empty": 2237197307220968,
@@ -183,7 +189,10 @@
       "address_placeholder_only": 2237197307220968,
       "address_has_zero_padded_number": 2389035477303320,
       "address_has_landmark": 2362511695542272,
-      "address_has_care_of": 2344714872914168
+      "address_has_care_of": 2344714872914168,
+      "address_region": 3019497147910566,
+      "name_latin": 4294168256660934,
+      "address_region_found": 3699871241775008
     },
     "test_source1.parquet": {
       "entity_id": 865952187248022,
@@ -240,7 +249,10 @@
       "address_placeholder_only": 733320828568064,
       "address_has_zero_padded_number": 740731931732672,
       "address_has_landmark": 764962019603960,
-      "address_has_care_of": 747834047311880
+      "address_has_care_of": 747834047311880,
+      "address_region": 1093630890274769,
+      "name_latin": 1437726163073024,
+      "address_region_found": 1231090343447168
     },
     "test_source2.parquet": {
       "entity_id": 2443113040951286,
@@ -256,8 +268,8 @@
       "name_norm": 2443994727090996,
       "name_clean": 2443290021950302,
       "name_tokens": 2442658417802073,
-      "name_base": 2442400727870394,
-      "name_legal_forms": 867860167496288,
+      "name_base": 2442320591996440,
+      "name_legal_forms": 867471613013660,
       "name_domain": 4004305905509556,
       "name_numbers": 257597909723483,
       "name_script": 4568992546993468,
@@ -283,7 +295,7 @@
       "name_has_leading_junk": 2092868351516208,
       "name_has_repeated_whitespace": 2212382450106432,
       "name_has_encoding_artifact": 2068599747983112,
-      "name_has_legal_form": 3004378279282464,
+      "name_has_legal_form": 3008518425496512,
       "name_legal_at_start": 2131172177184264,
       "name_legal_only": 2068697474289192,
       "name_clean_empty": 2068599173122488,
@@ -297,7 +309,10 @@
       "address_placeholder_only": 2068599173122488,
       "address_has_zero_padded_number": 2197925514601200,
       "address_has_landmark": 2198913125153232,
-      "address_has_care_of": 2161598922049392
+      "address_has_care_of": 2161598922049392,
+      "address_region": 3085846348480124,
+      "name_latin": 3875106657792207,
+      "address_region_found": 3369539520277872
     },
     "test_source3.parquet": {
       "entity_id": 2541101806396788,
@@ -313,8 +328,8 @@
       "name_norm": 2542605754494318,
       "name_clean": 2541433415124339,
       "name_tokens": 2540735312206601,
-      "name_base": 2540271496349840,
-      "name_legal_forms": 893683576244424,
+      "name_base": 2540283778900233,
+      "name_legal_forms": 893467233079284,
       "name_domain": 4163347899553814,
       "name_numbers": 270134128398477,
       "name_script": 4844422314021110,
@@ -340,7 +355,7 @@
       "name_has_leading_junk": 2176773365757904,
       "name_has_repeated_whitespace": 2300501192722048,
       "name_has_encoding_artifact": 2151154989479656,
-      "name_has_legal_form": 3103732960224472,
+      "name_has_legal_form": 3106038151326712,
       "name_legal_at_start": 2219165887614160,
       "name_legal_only": 2151317100175624,
       "name_clean_empty": 2151153552328096,
@@ -354,7 +369,10 @@
       "address_placeholder_only": 2151153552328096,
       "address_has_zero_padded_number": 2281561513328008,
       "address_has_landmark": 2267180512527712,
-      "address_has_care_of": 2248171596273904
+      "address_has_care_of": 2248171596273904,
+      "address_region": 3216774550765924,
+      "name_latin": 4111729355735099,
+      "address_region_found": 3503327777736856
     },
     "train_ground_truth.parquet": {
       "source1_entity_id": 1102416728051259,
@@ -375,55 +393,55 @@
     "train_ground_truth.tsv": "70bc1d8a16c667e0155c2105d0ab2ebe41d7e7a85d8a529e3ca81c6c3a5af037"
   },
   "raw_files_unchanged": true,
-  "finished": "2026-09-25 08:53:22",
+  "finished": "2026-09-25 12:01:25",
   "timings_s": {
-    "hash raw files (before)": 2.8,
-    "process train S1": 17.8,
-    "process train S2": 46.7,
-    "process train S3": 49.6,
-    "process test S1": 15.0,
-    "process test S2": 48.3,
-    "process test S3": 48.5,
-    "process ground truth": 1.6,
-    "fingerprint outputs": 13.5,
-    "validate": 55.8,
-    "measure: preprocessing summary": 4.9,
-    "measure: distributions": 7.6,
-    "measure: source comparison": 10.9,
-    "measure: uniqueness by source": 8.5,
-    "measure: normalization effects": 145.3,
-    "measure: S1 key collisions": 9.4,
-    "measure: GT collision purity (validation only)": 36.1,
-    "measure: GT representation agreement (validation only)": 5.5,
-    "measure: remaining noise": 19.6,
-    "measure: representation examples": 7.1,
-    "hash raw files (after)": 3.2
+    "hash raw files (before)": 3.1,
+    "process train S1": 33.6,
+    "process train S2": 79.6,
+    "process train S3": 85.2,
+    "process test S1": 29.0,
+    "process test S2": 84.5,
+    "process test S3": 84.2,
+    "process ground truth": 2.0,
+    "fingerprint outputs": 14.1,
+    "validate": 74.1,
+    "measure: preprocessing summary": 5.4,
+    "measure: distributions": 8.6,
+    "measure: source comparison": 13.6,
+    "measure: uniqueness by source": 9.9,
+    "measure: normalization effects": 166.3,
+    "measure: S1 key collisions": 10.6,
+    "measure: GT collision purity (validation only)": 37.1,
+    "measure: GT representation agreement (validation only)": 5.8,
+    "measure: remaining noise": 19.5,
+    "measure: representation examples": 7.3,
+    "hash raw files (after)": 4.7
   },
   "step_peak_rss_gb": {
-    "hash raw files (before)": 0.08,
-    "process train S1": 2.56,
-    "process train S2": 3.92,
-    "process train S3": 4.03,
-    "process test S1": 2.17,
-    "process test S2": 3.84,
-    "process test S3": 3.98,
-    "process ground truth": 1.95,
-    "fingerprint outputs": 5.6,
-    "validate": 4.3,
-    "measure: preprocessing summary": 2.86,
-    "measure: distributions": 3.46,
-    "measure: source comparison": 4.22,
-    "measure: uniqueness by source": 4.13,
-    "measure: normalization effects": 5.38,
-    "measure: S1 key collisions": 2.74,
-    "measure: GT collision purity (validation only)": 6.56,
-    "measure: GT representation agreement (validation only)": 8.88,
-    "measure: remaining noise": 2.75,
-    "measure: representation examples": 7.23,
-    "hash raw files (after)": 7.1
+    "hash raw files (before)": 0.09,
+    "process train S1": 2.49,
+    "process train S2": 3.95,
+    "process train S3": 3.98,
+    "process test S1": 2.39,
+    "process test S2": 3.65,
+    "process test S3": 3.83,
+    "process ground truth": 2.1,
+    "fingerprint outputs": 6.02,
+    "validate": 4.36,
+    "measure: preprocessing summary": 2.85,
+    "measure: distributions": 3.35,
+    "measure: source comparison": 4.28,
+    "measure: uniqueness by source": 4.21,
+    "measure: normalization effects": 5.51,
+    "measure: S1 key collisions": 2.63,
+    "measure: GT collision purity (validation only)": 6.54,
+    "measure: GT representation agreement (validation only)": 9.09,
+    "measure: remaining noise": 2.78,
+    "measure: representation examples": 7.13,
+    "hash raw files (after)": 7.05
   },
-  "total_s": 557.8,
-  "peak_rss_gb": 8.88,
+  "total_s": 778.4,
+  "peak_rss_gb": 9.09,
   "validation_failed": 0,
   "outputs": [
     {
@@ -431,7 +449,7 @@
       "source": "S1",
       "output": "train_source1.parquet",
       "rows_out": 2206821,
-      "size_mb": 355.8,
+      "size_mb": 357.4,
       "raw_size_mb": 210.1
     },
     {
@@ -439,7 +457,7 @@
       "source": "S2",
       "output": "train_source2.parquet",
       "rows_out": 5034616,
-      "size_mb": 860.3,
+      "size_mb": 868.3,
       "raw_size_mb": 489.3
     },
     {
@@ -447,7 +465,7 @@
       "source": "S3",
       "output": "train_source3.parquet",
       "rows_out": 5285603,
-      "size_mb": 887.6,
+      "size_mb": 894.7,
       "raw_size_mb": 503.7
     },
     {
@@ -455,7 +473,7 @@
       "source": "S1",
       "output": "test_source1.parquet",
       "rows_out": 1732544,
-      "size_mb": 286.9,
+      "size_mb": 288.1,
       "raw_size_mb": 175.0
     },
     {
@@ -463,7 +481,7 @@
       "source": "S2",
       "output": "test_source2.parquet",
       "rows_out": 4887273,
-      "size_mb": 867.1,
+      "size_mb": 875.8,
       "raw_size_mb": 509.5
     },
     {
@@ -471,7 +489,7 @@
       "source": "S3",
       "output": "test_source3.parquet",
       "rows_out": 5082316,
-      "size_mb": 873.1,
+      "size_mb": 880.7,
       "raw_size_mb": 506.0
     },
     {

@@ -5,6 +5,14 @@ times from a clean state. Every number below comes from `preprocessing/results/`
 `preprocessing/notebooks/preprocessing_comparison.ipynb` (tables and plots in `results/comparison/`).
 No matching, blocking or candidate generation was performed.
 
+> **Update: `PREPROCESSING_AUDIT.md` §9 applied.** Three columns were appended (`address_region`,
+> `address_region_found`, `name_latin`), giving 58 columns. Indic LLP forms were added to the legal-form lexicon,
+> so `name_legal_forms`, `name_base` and `name_has_legal_form` changed for S2/S3 Indic names only. The fingerprint
+> diff shows every other existing column unchanged in every file. Validation: 149/149 original + 30/30 new checks.
+> The rebuild took 13.0 min with a peak of 9.1 GB. Evidence is in `results/audit/`; the frozen version is in
+> `FROZEN_FINGERPRINTS.json`; the column reference is `DATA_DICTIONARY.md`. The facts below describe the original
+> 55-column build unless stated otherwise.
+
 ## Run facts
 
 | | |

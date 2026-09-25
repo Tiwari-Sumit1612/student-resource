@@ -1,0 +1,204 @@
+{
+  "A": {
+    "US": {
+      "distinct_s1_keys": 957123
+    },
+    "India": {
+      "distinct_s1_keys": 561091
+    }
+  },
+  "B": {
+    "US": {
+      "distinct_s1_keys": 828897
+    },
+    "India": {
+      "distinct_s1_keys": 482057
+    }
+  },
+  "C": {
+    "US": {
+      "distinct_s1_keys": 1405813
+    },
+    "India": {
+      "distinct_s1_keys": 938728
+    }
+  },
+  "E": {
+    "US": {
+      "df_cap_frac": 0.02,
+      "k": 10,
+      "df_cap_abs": 26472,
+      "vocab": 15700,
+      "s1_nnz": 16594346
+    },
+    "India": {
+      "df_cap_frac": 0.02,
+      "k": 10,
+      "df_cap_abs": 17663,
+      "vocab": 17630,
+      "s1_nnz": 8226231
+    }
+  },
+  "E'": {
+    "US": {
+      "df_cap_frac": 0.02,
+      "k": 30,
+      "df_cap_abs": 26472,
+      "vocab": 15700,
+      "s1_nnz": 16594346,
+      "regions": 45
+    },
+    "India": {
+      "df_cap_frac": 0.02,
+      "k": 30,
+      "df_cap_abs": 17663,
+      "vocab": 17630,
+      "s1_nnz": 8226231,
+      "regions": 16
+    }
+  },
+  "D (tight)": {
+    "US": {
+      "df_cap": 300,
+      "k": 30,
+      "s1_keys": 80977,
+      "s1_keys_kept": 79086,
+      "pct_s1_postings_kept": 17.63
+    },
+    "India": {
+      "df_cap": 300,
+      "k": 30,
+      "s1_keys": 50709,
+      "s1_keys_kept": 50288,
+      "pct_s1_postings_kept": 19.03
+    }
+  },
+  "F (tight)": {
+    "US": {
+      "df_cap": 20,
+      "k": 30,
+      "s1_keys": 308544,
+      "s1_keys_kept": 295945,
+      "pct_s1_postings_kept": 50.99
+    },
+    "India": {
+      "df_cap": 20,
+      "k": 30,
+      "s1_keys": 43410,
+      "s1_keys_kept": 37008,
+      "pct_s1_postings_kept": 7.99
+    }
+  },
+  "G (tight)": {
+    "US": {
+      "df_cap": 200,
+      "k": 30,
+      "s1_keys": 620697,
+      "s1_keys_kept": 617332,
+      "pct_s1_postings_kept": 41.53
+    },
+    "India": {
+      "df_cap": 200,
+      "k": 30,
+      "s1_keys": 499011,
+      "s1_keys_kept": 493931,
+      "pct_s1_postings_kept": 25.78
+    }
+  },
+  "D": {
+    "US": {
+      "df_cap": 2000,
+      "k": 30,
+      "s1_keys": 80977,
+      "s1_keys_kept": 80610,
+      "pct_s1_postings_kept": 39.4
+    },
+    "India": {
+      "df_cap": 2000,
+      "k": 30,
+      "s1_keys": 50709,
+      "s1_keys_kept": 50511,
+      "pct_s1_postings_kept": 23.15
+    }
+  },
+  "F": {
+    "US": {
+      "df_cap": 100,
+      "k": 30,
+      "s1_keys": 308544,
+      "s1_keys_kept": 306963,
+      "pct_s1_postings_kept": 76.83
+    },
+    "India": {
+      "df_cap": 100,
+      "k": 30,
+      "s1_keys": 43410,
+      "s1_keys_kept": 41411,
+      "pct_s1_postings_kept": 19.54
+    }
+  },
+  "G": {
+    "US": {
+      "df_cap": 1000,
+      "k": 30,
+      "s1_keys": 620697,
+      "s1_keys_kept": 620053,
+      "pct_s1_postings_kept": 55.23
+    },
+    "India": {
+      "df_cap": 1000,
+      "k": 30,
+      "s1_keys": 499011,
+      "s1_keys_kept": 497857,
+      "pct_s1_postings_kept": 41.85
+    }
+  },
+  "D (loose)": {
+    "US": {
+      "df_cap": 10000,
+      "k": 30,
+      "s1_keys": 80977,
+      "s1_keys_kept": 80953,
+      "pct_s1_postings_kept": 73.09
+    },
+    "India": {
+      "df_cap": 10000,
+      "k": 30,
+      "s1_keys": 50709,
+      "s1_keys_kept": 50677,
+      "pct_s1_postings_kept": 48.38
+    }
+  },
+  "F (loose)": {
+    "US": {
+      "df_cap": 500,
+      "k": 30,
+      "s1_keys": 308544,
+      "s1_keys_kept": 308431,
+      "pct_s1_postings_kept": 92.63
+    },
+    "India": {
+      "df_cap": 500,
+      "k": 30,
+      "s1_keys": 43410,
+      "s1_keys_kept": 42939,
+      "pct_s1_postings_kept": 39.95
+    }
+  },
+  "G (loose)": {
+    "US": {
+      "df_cap": 5000,
+      "k": 30,
+      "s1_keys": 620697,
+      "s1_keys_kept": 620550,
+      "pct_s1_postings_kept": 68.13
+    },
+    "India": {
+      "df_cap": 5000,
+      "k": 30,
+      "s1_keys": 499011,
+      "s1_keys_kept": 498771,
+      "pct_s1_postings_kept": 60.12
+    }
+  }
+}

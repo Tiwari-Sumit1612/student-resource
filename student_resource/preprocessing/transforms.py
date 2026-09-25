@@ -11,9 +11,11 @@ Stage chain for a text field (each stage consumes the previous one):
 """
 from __future__ import annotations
 
+import re
 import unicodedata
 
 import polars as pl
+from anyascii import anyascii
 
 from . import config as C
 
@@ -215,6 +217,26 @@ def address_region(segments_col, country_col) -> pl.Expr:
             pref = _segment_regions(segments_col, REGION_MAPS[country][kind])
             out = out.when((_e(country_col) == country) & (pref.list.len() == 1)).then(pref.list.first())
     return out
+
+
+def _romanise(text: str) -> str | None:
+    """anyascii (pinned in requirements.txt) -> lowercase -> drop accent marks -> keep [a-z0-9 &].
+    Chosen over indic-transliteration ITRANS on true-pair evaluation (PREPROCESSING_AUDIT step 3)."""
+    s = unicodedata.normalize("NFD", anyascii(text).lower())
+    s = "".join(ch for ch in s if not unicodedata.combining(ch))
+    s = re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 &]", "", s)).strip()
+    return s or None
+
+
+def _romanise_batch(s: pl.Series) -> pl.Series:
+    return pl.Series([None if x is None else _romanise(x) for x in s.to_list()], dtype=pl.String)
+
+
+def name_latin(clean_col, script_col) -> pl.Expr:
+    """Romanised name_clean for names containing non-Latin script; null for Latin / letterless names.
+    Fuzzy by construction: never an exact key."""
+    src = pl.when(~_e(script_col).is_in(["Latin", "None"])).then(_e(clean_col))
+    return src.map_batches(_romanise_batch, return_dtype=pl.String, is_elementwise=True)
 
 
 def script_label(raw_col) -> pl.Expr:
